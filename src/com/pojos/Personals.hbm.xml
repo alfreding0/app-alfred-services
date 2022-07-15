@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 15, 2022 5:26:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.pojos.Personals" optimistic-lock="version" schema="public" table="personals">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="ci" type="string">
+      <column length="12" name="ci" not-null="true"/>
+    </property>
+    <property name="firstName" type="string">
+      <column length="50" name="first_name" not-null="true"/>
+    </property>
+    <property name="lastName" type="string">
+      <column length="50" name="last_name" not-null="true"/>
+    </property>
+    <property name="phone" type="string">
+      <column length="20" name="phone" not-null="true"/>
+    </property>
+    <property name="address" type="string">
+      <column length="150" name="address" not-null="true"/>
+    </property>
+    <property name="birthday" type="date">
+      <column length="13" name="birthday" not-null="true"/>
+    </property>
+    <property name="createdAt" type="timestamp">
+      <column length="29" name="created_at"/>
+    </property>
+    <property name="updatedAt" type="timestamp">
+      <column length="29" name="updated_at"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="saleses" table="sales">
+      <key>
+        <column name="personal_id" not-null="true"/>
+      </key>
+      <one-to-many class="com.pojos.Sales"/>
+    </set>
+    <set fetch="select" inverse="true" lazy="true" name="userses" table="users">
+      <key>
+        <column name="personal_id" not-null="true"/>
+      </key>
+      <one-to-many class="com.pojos.Users"/>
+    </set>
+  </class>
+</hibernate-mapping>

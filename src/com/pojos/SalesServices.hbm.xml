@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 15, 2022 5:26:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.pojos.SalesServices" optimistic-lock="version" schema="public" table="sales_services">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <many-to-one class="com.pojos.Sales" fetch="select" name="sales">
+      <column name="sale_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="com.pojos.Services" fetch="select" name="services">
+      <column name="service_id" not-null="true"/>
+    </many-to-one>
+    <property name="numberDays" type="int">
+      <column name="number_days" not-null="true"/>
+    </property>
+    <property name="finalPrice" type="double">
+      <column name="final_price" not-null="true" precision="17" scale="17"/>
+    </property>
+    <property name="createdAt" type="timestamp">
+      <column length="29" name="created_at"/>
+    </property>
+    <property name="updatedAt" type="timestamp">
+      <column length="29" name="updated_at"/>
+    </property>
+  </class>
+</hibernate-mapping>

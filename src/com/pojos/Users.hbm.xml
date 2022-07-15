@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 15, 2022 5:26:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.pojos.Users" optimistic-lock="version" schema="public" table="users">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <many-to-one class="com.pojos.Personals" fetch="select" name="personals">
+      <column name="personal_id" not-null="true"/>
+    </many-to-one>
+    <property name="name" type="string">
+      <column length="50" name="name" not-null="true"/>
+    </property>
+    <property name="email" type="string">
+      <column length="100" name="email" not-null="true"/>
+    </property>
+    <property name="password" type="string">
+      <column length="100" name="password" not-null="true"/>
+    </property>
+    <property name="createdAt" type="timestamp">
+      <column length="29" name="created_at"/>
+    </property>
+    <property name="updatedAt" type="timestamp">
+      <column length="29" name="updated_at"/>
+    </property>
+  </class>
+</hibernate-mapping>

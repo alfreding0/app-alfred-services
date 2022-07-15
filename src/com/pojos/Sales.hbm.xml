@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 15, 2022 5:26:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.pojos.Sales" optimistic-lock="version" schema="public" table="sales">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <many-to-one class="com.pojos.Customers" fetch="select" name="customers">
+      <column name="customer_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="com.pojos.Personals" fetch="select" name="personals">
+      <column name="personal_id" not-null="true"/>
+    </many-to-one>
+    <property name="dateTime" type="timestamp">
+      <column length="29" name="date_time" not-null="true"/>
+    </property>
+    <property name="total" type="double">
+      <column name="total" not-null="true" precision="17" scale="17"/>
+    </property>
+    <property name="createdAt" type="timestamp">
+      <column length="29" name="created_at"/>
+    </property>
+    <property name="updatedAt" type="timestamp">
+      <column length="29" name="updated_at"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="salesServiceses" table="sales_services">
+      <key>
+        <column name="sale_id" not-null="true"/>
+      </key>
+      <one-to-many class="com.pojos.SalesServices"/>
+    </set>
+  </class>
+</hibernate-mapping>
