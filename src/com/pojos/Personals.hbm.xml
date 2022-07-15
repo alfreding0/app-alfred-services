@@ -5,7 +5,9 @@
   <class name="com.pojos.Personals" optimistic-lock="version" schema="public" table="personals">
     <id name="id" type="int">
       <column name="id"/>
-      <generator class="identity"/>
+      <generator class="sequence">
+          <param name="sequence">personals_id_seq</param>
+      </generator>
     </id>
     <property name="ci" type="string">
       <column length="12" name="ci" not-null="true"/>
