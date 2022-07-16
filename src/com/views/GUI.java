@@ -13,15 +13,15 @@ import com.pojos.Personals;
 import com.pojos.Users;
 import java.awt.Color;
 import java.awt.Desktop;
+import java.awt.Font;
 import java.io.IOException;
 import java.net.URI;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -57,6 +57,7 @@ public class GUI extends javax.swing.JFrame {
         initComponents();
 
         this.setLocationRelativeTo(null);
+        this.setNewStyleHeaderTable();
     }
 
     /**
@@ -426,6 +427,7 @@ public class GUI extends javax.swing.JFrame {
         personalsIndex.setBackground(new java.awt.Color(255, 255, 255));
         personalsIndex.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTable1.setAutoCreateRowSorter(true);
         jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
         jTable1.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -436,7 +438,8 @@ public class GUI extends javax.swing.JFrame {
 
             }
         ));
-        jTable1.setRowHeight(24);
+        jTable1.setFocusable(false);
+        jTable1.setRowHeight(30);
         jTable1.setSelectionBackground(lightOrange1);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1438,6 +1441,13 @@ public class GUI extends javax.swing.JFrame {
             bodyContent.setSelectedComponent(homeLogin);
             JOptionPane.showMessageDialog(null, "Your credentials are incorrect");
         }
+    }
+
+    private void setNewStyleHeaderTable() {
+        jTable1.getTableHeader().setOpaque(false);
+        jTable1.getTableHeader().setForeground(Color.WHITE);
+        jTable1.getTableHeader().setBackground(darkOrange1);
+        jTable1.getTableHeader().setFont(new Font("Corbel", Font.BOLD, 14));
     }
 
 }
