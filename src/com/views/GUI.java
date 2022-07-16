@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -58,6 +59,7 @@ public class GUI extends javax.swing.JFrame {
 
         this.setLocationRelativeTo(null);
         this.setNewStyleHeaderTable();
+        txtUsername.requestFocus();
     }
 
     /**
@@ -1012,7 +1014,11 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMInimizeMouseClicked
 
     private void btnDeletePersonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseClicked
-        this.deletePersonal();
+        int numberRowsSelected = jTable1.getSelectedRowCount();
+        if (numberRowsSelected == 1)
+            this.deletePersonal();
+        else
+            this.deleteManyPersonals();
     }//GEN-LAST:event_btnDeletePersonalMouseClicked
 
     private void btnDeletePersonalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseEntered
@@ -1448,6 +1454,17 @@ public class GUI extends javax.swing.JFrame {
         jTable1.getTableHeader().setForeground(Color.WHITE);
         jTable1.getTableHeader().setBackground(darkOrange1);
         jTable1.getTableHeader().setFont(new Font("Corbel", Font.BOLD, 14));
+    }
+
+    private void deleteManyPersonals() {
+        int [] rows = jTable1.getSelectedRows();
+        
+        for (int row : rows) {
+            int idPersonalSelected = Integer.parseInt(jTable1.getValueAt(row, 0).toString());
+            personal = daoPersonals.find(idPersonalSelected);
+            daoPersonals.delete(personal);
+        }
+        this.listPersonals();
     }
 
 }
