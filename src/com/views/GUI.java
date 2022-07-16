@@ -6,6 +6,7 @@
 package com.views;
 
 import AppPackage.AnimationClass;
+import com.alfreding0.utils.FieldsValidator;
 import com.dao.DaoPersonals;
 import com.dao.DaoUsers;
 import com.pojos.Personals;
@@ -41,6 +42,16 @@ public class GUI extends javax.swing.JFrame {
     
     Users user = new Users();
     DaoUsers daoUsers = new DaoUsers();
+    
+    
+    
+    //COLORS
+    Color darkOrange2 = new Color(255,102,51);
+    Color darkOrange1 = new Color(255,128,86);
+    Color lightOrange1 = new Color(250, 234, 223);
+    Color lightOrange2 = new Color(250,134,112);
+    Color iconOrange = new Color(255, 99, 71);
+    
 
     public GUI() {
         initComponents();
@@ -64,6 +75,7 @@ public class GUI extends javax.swing.JFrame {
         btnSalir = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         txtBuscar = new javax.swing.JTextField();
+        lblTitle = new javax.swing.JLabel();
         bodyContent = new javax.swing.JTabbedPane();
         homeLogin = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -71,40 +83,40 @@ public class GUI extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         home = new javax.swing.JPanel();
-        btnAnotaciones = new javax.swing.JPanel();
+        btnCustomers = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        btnAjustes = new javax.swing.JPanel();
+        btnSetting = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        bntCronograma = new javax.swing.JPanel();
+        btnPersonals = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        btnDrive = new javax.swing.JPanel();
+        btnUsers = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        btnEventos = new javax.swing.JPanel();
+        btnSales = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        btnSocios = new javax.swing.JPanel();
+        btnServices = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         personalsIndex = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btnAddProduct = new javax.swing.JPanel();
+        btnDeletePersonal = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
-        btnAddProduct1 = new javax.swing.JPanel();
+        btnAddPersonal = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
-        btnAddProduct4 = new javax.swing.JPanel();
+        btnShowPersonals = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
-        btnAddProduct5 = new javax.swing.JPanel();
+        btnEditPersonal = new javax.swing.JPanel();
         jLabel44 = new javax.swing.JLabel();
         txtPersonalID = new javax.swing.JLabel();
         personalsForm = new javax.swing.JPanel();
-        btnAddProduct2 = new javax.swing.JPanel();
+        btnSavePersonals = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
-        btnAddProduct3 = new javax.swing.JPanel();
+        btnBackPersonals = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
         txtPersonalCI = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -129,23 +141,23 @@ public class GUI extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        btnIngresar = new javax.swing.JPanel();
+        btnLogIn = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         btnMenu = new javax.swing.JLabel();
         btnInternet = new javax.swing.JLabel();
         sidebarOptions = new javax.swing.JPanel();
-        btnDrive5 = new javax.swing.JPanel();
+        btnUsersSidebar = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
-        btnDrive4 = new javax.swing.JPanel();
+        btnServicesSidebar = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        btnDrive3 = new javax.swing.JPanel();
+        btnCustomersSidebar = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
-        btnDrive2 = new javax.swing.JPanel();
+        btnPersonalsSidebar = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
-        btnDrive1 = new javax.swing.JPanel();
+        btnHome = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
-        btnDrive6 = new javax.swing.JPanel();
+        btnSalesSidebar = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
 
@@ -157,27 +169,50 @@ public class GUI extends javax.swing.JFrame {
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel24.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel24.setFont(new java.awt.Font("Corbel", 1, 24)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(204, 51, 0));
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Alf Services");
+        jLabel24.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jLabel24.setOpaque(true);
-        background.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 40));
+        background.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 40));
 
-        headerContent.setBackground(new java.awt.Color(255, 255, 255));
+        headerContent.setBackground(new java.awt.Color(255, 237, 237));
         headerContent.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 102, 0)));
         headerContent.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnMInimize.setBackground(new java.awt.Color(255, 237, 237));
+        btnMInimize.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnMInimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8_Expand_Arrow_32px.png"))); // NOI18N
         btnMInimize.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMInimize.setOpaque(true);
         btnMInimize.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMInimizeMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnMInimizeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnMInimizeMouseExited(evt);
+            }
         });
         headerContent.add(btnMInimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 30, 30));
 
+        btnSalir.setBackground(new java.awt.Color(255, 237, 237));
+        btnSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8_Multiply_32px.png"))); // NOI18N
         btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.setOpaque(true);
         btnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSalirMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSalirMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSalirMouseExited(evt);
             }
         });
         headerContent.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, 30, 30));
@@ -194,6 +229,12 @@ public class GUI extends javax.swing.JFrame {
         txtBuscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
         headerContent.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 290, 30));
 
+        lblTitle.setBackground(new java.awt.Color(255, 99, 71));
+        lblTitle.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(204, 51, 0));
+        lblTitle.setText(">Home");
+        headerContent.add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 660, 30));
+
         background.add(headerContent, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 750, 110));
 
         bodyContent.setBackground(new java.awt.Color(255, 255, 255));
@@ -208,7 +249,7 @@ public class GUI extends javax.swing.JFrame {
         homeLogin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 150, 140));
 
         jLabel25.setFont(new java.awt.Font("Corbel", 1, 60)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel25.setForeground(new java.awt.Color(255, 99, 71));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Alfred Services");
         homeLogin.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 730, 110));
@@ -220,7 +261,7 @@ public class GUI extends javax.swing.JFrame {
         homeLogin.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 60, 110));
 
         jLabel34.setFont(new java.awt.Font("Corbel", 1, 60)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel34.setForeground(new java.awt.Color(255, 99, 71));
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel34.setText("Desktop App #");
         homeLogin.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 710, 110));
@@ -230,158 +271,162 @@ public class GUI extends javax.swing.JFrame {
         home.setBackground(new java.awt.Color(255, 255, 255));
         home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnAnotaciones.setBackground(new java.awt.Color(255, 255, 255));
-        btnAnotaciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAnotaciones.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnCustomers.setBackground(new java.awt.Color(255, 255, 255));
+        btnCustomers.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCustomers.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAnotacionesMouseEntered(evt);
+                btnCustomersMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAnotacionesMouseExited(evt);
+                btnCustomersMouseExited(evt);
             }
         });
-        btnAnotaciones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnCustomers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8-customer-96.png"))); // NOI18N
-        btnAnotaciones.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 120, 90));
+        btnCustomers.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 120, 90));
 
         jLabel16.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 102, 0));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("Anotaciones");
-        btnAnotaciones.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
+        jLabel16.setText("Customers");
+        btnCustomers.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
 
-        home.add(btnAnotaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 120, 150));
+        home.add(btnCustomers, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 120, 150));
 
-        btnAjustes.setBackground(new java.awt.Color(255, 255, 255));
-        btnAjustes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAjustes.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSetting.setBackground(new java.awt.Color(255, 255, 255));
+        btnSetting.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSetting.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAjustesMouseEntered(evt);
+                btnSettingMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAjustesMouseExited(evt);
+                btnSettingMouseExited(evt);
             }
         });
-        btnAjustes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnSetting.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8_Maintenance_96px.png"))); // NOI18N
-        btnAjustes.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
+        btnSetting.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
 
         jLabel12.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 102, 0));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Settings");
-        btnAjustes.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
+        btnSetting.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
 
-        home.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, 120, 150));
+        home.add(btnSetting, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, 120, 150));
 
-        bntCronograma.setBackground(new java.awt.Color(255, 255, 255));
-        bntCronograma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bntCronograma.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnPersonals.setBackground(new java.awt.Color(255, 255, 255));
+        btnPersonals.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPersonals.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPersonalsMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bntCronogramaMouseEntered(evt);
+                btnPersonalsMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                bntCronogramaMouseExited(evt);
+                btnPersonalsMouseExited(evt);
             }
         });
-        bntCronograma.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnPersonals.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8-staff-96.png"))); // NOI18N
-        bntCronograma.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
+        btnPersonals.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
 
         jLabel14.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 102, 0));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Personals");
-        bntCronograma.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
+        btnPersonals.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
 
-        home.add(bntCronograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 120, 150));
+        home.add(btnPersonals, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 120, 150));
 
-        btnDrive.setBackground(new java.awt.Color(255, 255, 255));
-        btnDrive.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnUsers.setBackground(new java.awt.Color(255, 255, 255));
+        btnUsers.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnUsers.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDriveMouseClicked(evt);
+                btnUsersMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDriveMouseEntered(evt);
+                btnUsersMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDriveMouseExited(evt);
+                btnUsersMouseExited(evt);
             }
         });
-        btnDrive.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnUsers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8-checked-user-male-96.png"))); // NOI18N
-        btnDrive.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
+        btnUsers.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
 
         jLabel18.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 102, 0));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Users");
-        btnDrive.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
+        btnUsers.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
 
-        home.add(btnDrive, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 120, 150));
+        home.add(btnUsers, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 120, 150));
 
-        btnEventos.setBackground(new java.awt.Color(255, 255, 255));
-        btnEventos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEventos.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSales.setBackground(new java.awt.Color(255, 255, 255));
+        btnSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSales.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnEventosMouseEntered(evt);
+                btnSalesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnEventosMouseExited(evt);
+                btnSalesMouseExited(evt);
             }
         });
-        btnEventos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnSales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8-winter-sales-96.png"))); // NOI18N
-        btnEventos.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 120, 90));
+        btnSales.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 120, 90));
 
         jLabel20.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 102, 0));
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("Sales");
-        btnEventos.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
+        btnSales.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
 
-        home.add(btnEventos, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 120, 150));
+        home.add(btnSales, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 120, 150));
 
-        btnSocios.setBackground(new java.awt.Color(255, 255, 255));
-        btnSocios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSocios.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnServices.setBackground(new java.awt.Color(255, 255, 255));
+        btnServices.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnServices.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnSociosMouseEntered(evt);
+                btnServicesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnSociosMouseExited(evt);
+                btnServicesMouseExited(evt);
             }
         });
-        btnSocios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnServices.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8-multiple-devices-96.png"))); // NOI18N
-        btnSocios.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
+        btnServices.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 90));
 
         jLabel22.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 102, 0));
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setText("Services");
-        btnSocios.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
+        btnServices.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 20));
 
-        home.add(btnSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 120, 150));
+        home.add(btnServices, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 120, 150));
 
         bodyContent.addTab("Main", home);
 
         personalsIndex.setBackground(new java.awt.Color(255, 255, 255));
         personalsIndex.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
         jTable1.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -392,6 +437,7 @@ public class GUI extends javax.swing.JFrame {
             }
         ));
         jTable1.setRowHeight(24);
+        jTable1.setSelectionBackground(lightOrange1);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);
@@ -401,100 +447,100 @@ public class GUI extends javax.swing.JFrame {
 
         personalsIndex.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 640, 320));
 
-        btnAddProduct.setBackground(new java.awt.Color(255, 255, 255));
-        btnAddProduct.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
-        btnAddProduct.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddProduct.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDeletePersonal.setBackground(new java.awt.Color(255, 255, 255));
+        btnDeletePersonal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnDeletePersonal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeletePersonal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddProductMouseClicked(evt);
+                btnDeletePersonalMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddProductMouseEntered(evt);
+                btnDeletePersonalMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddProductMouseExited(evt);
+                btnDeletePersonalMouseExited(evt);
             }
         });
-        btnAddProduct.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnDeletePersonal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 102, 0));
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("ELIMINAR");
-        btnAddProduct.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel23.setText("DELETE");
+        btnDeletePersonal.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        personalsIndex.add(btnAddProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 130, 40));
+        personalsIndex.add(btnDeletePersonal, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 130, 40));
 
-        btnAddProduct1.setBackground(new java.awt.Color(255, 102, 51));
-        btnAddProduct1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAddPersonal.setBackground(new java.awt.Color(255, 102, 51));
+        btnAddPersonal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddPersonal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddProduct1MouseClicked(evt);
+                btnAddPersonalMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddProduct1MouseEntered(evt);
+                btnAddPersonalMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddProduct1MouseExited(evt);
+                btnAddPersonalMouseExited(evt);
             }
         });
-        btnAddProduct1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnAddPersonal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel35.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setText("AGREGAR");
-        btnAddProduct1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel35.setText("ADD");
+        btnAddPersonal.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        personalsIndex.add(btnAddProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+        personalsIndex.add(btnAddPersonal, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
 
-        btnAddProduct4.setBackground(new java.awt.Color(255, 255, 255));
-        btnAddProduct4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
-        btnAddProduct4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnShowPersonals.setBackground(new java.awt.Color(255, 255, 255));
+        btnShowPersonals.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnShowPersonals.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnShowPersonals.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddProduct4MouseClicked(evt);
+                btnShowPersonalsMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddProduct4MouseEntered(evt);
+                btnShowPersonalsMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddProduct4MouseExited(evt);
+                btnShowPersonalsMouseExited(evt);
             }
         });
-        btnAddProduct4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnShowPersonals.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel43.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 102, 0));
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel43.setText("MOSTRAR");
-        btnAddProduct4.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel43.setText("SHOW ALL");
+        btnShowPersonals.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        personalsIndex.add(btnAddProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 130, 40));
+        personalsIndex.add(btnShowPersonals, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 130, 40));
 
-        btnAddProduct5.setBackground(new java.awt.Color(255, 255, 255));
-        btnAddProduct5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
-        btnAddProduct5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddProduct5.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEditPersonal.setBackground(new java.awt.Color(255, 255, 255));
+        btnEditPersonal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnEditPersonal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditPersonal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddProduct5MouseClicked(evt);
+                btnEditPersonalMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddProduct5MouseEntered(evt);
+                btnEditPersonalMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddProduct5MouseExited(evt);
+                btnEditPersonalMouseExited(evt);
             }
         });
-        btnAddProduct5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnEditPersonal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel44.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(255, 102, 0));
         jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel44.setText("EDITAR");
-        btnAddProduct5.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel44.setText("EDIT");
+        btnEditPersonal.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        personalsIndex.add(btnAddProduct5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 130, 40));
+        personalsIndex.add(btnEditPersonal, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 130, 40));
 
         txtPersonalID.setFont(new java.awt.Font("Corbel", 1, 36)); // NOI18N
         txtPersonalID.setForeground(new java.awt.Color(153, 51, 0));
@@ -509,53 +555,53 @@ public class GUI extends javax.swing.JFrame {
         personalsForm.setBackground(new java.awt.Color(255, 255, 255));
         personalsForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnAddProduct2.setBackground(new java.awt.Color(255, 102, 51));
-        btnAddProduct2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddProduct2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSavePersonals.setBackground(new java.awt.Color(255, 102, 51));
+        btnSavePersonals.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSavePersonals.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddProduct2MouseClicked(evt);
+                btnSavePersonalsMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddProduct2MouseEntered(evt);
+                btnSavePersonalsMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddProduct2MouseExited(evt);
+                btnSavePersonalsMouseExited(evt);
             }
         });
-        btnAddProduct2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnSavePersonals.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("GUARDAR");
-        btnAddProduct2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel36.setText("SAVE");
+        btnSavePersonals.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        personalsForm.add(btnAddProduct2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
+        personalsForm.add(btnSavePersonals, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
 
-        btnAddProduct3.setBackground(new java.awt.Color(255, 255, 255));
-        btnAddProduct3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
-        btnAddProduct3.setForeground(new java.awt.Color(0, 0, 0));
-        btnAddProduct3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnBackPersonals.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackPersonals.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnBackPersonals.setForeground(new java.awt.Color(0, 0, 0));
+        btnBackPersonals.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBackPersonals.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddProduct3MouseClicked(evt);
+                btnBackPersonalsMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddProduct3MouseEntered(evt);
+                btnBackPersonalsMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddProduct3MouseExited(evt);
+                btnBackPersonalsMouseExited(evt);
             }
         });
-        btnAddProduct3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnBackPersonals.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel37.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 102, 0));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel37.setText("VOLVER");
-        btnAddProduct3.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel37.setText("BACK");
+        btnBackPersonals.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        personalsForm.add(btnAddProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+        personalsForm.add(btnBackPersonals, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
 
         txtPersonalCI.setBackground(new java.awt.Color(255, 255, 255));
         txtPersonalCI.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
@@ -650,7 +696,7 @@ public class GUI extends javax.swing.JFrame {
         txtUsername.setBackground(new java.awt.Color(255, 255, 255));
         txtUsername.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         txtUsername.setForeground(new java.awt.Color(102, 102, 102));
-        txtUsername.setText("Ingrese usuario");
+        txtUsername.setText("alfreding0");
         txtUsername.setBorder(null);
         txtUsername.setOpaque(false);
         sidebarLogin.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 150, 30));
@@ -660,6 +706,11 @@ public class GUI extends javax.swing.JFrame {
         txtpassword.setText("jPasswordField1");
         txtpassword.setBorder(null);
         txtpassword.setOpaque(false);
+        txtpassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtpasswordActionPerformed(evt);
+            }
+        });
         sidebarLogin.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 150, 30));
 
         jSeparator2.setForeground(new java.awt.Color(102, 102, 102));
@@ -682,28 +733,28 @@ public class GUI extends javax.swing.JFrame {
         jLabel8.setText("USER:");
         sidebarLogin.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 110, -1));
 
-        btnIngresar.setBackground(new java.awt.Color(255, 102, 51));
-        btnIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnIngresar.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnLogIn.setBackground(new java.awt.Color(255, 102, 51));
+        btnLogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLogIn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnIngresarMouseClicked(evt);
+                btnLogInMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnIngresarMouseEntered(evt);
+                btnLogInMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnIngresarMouseExited(evt);
+                btnLogInMouseExited(evt);
             }
         });
-        btnIngresar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnLogIn.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("INGRESAR");
-        btnIngresar.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+        jLabel9.setText("LOG IN");
+        btnLogIn.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
 
-        sidebarLogin.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 140, 40));
+        sidebarLogin.add(btnLogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 140, 40));
 
         jLabel10.setForeground(new java.awt.Color(51, 51, 51));
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/icons8_customer_32px_1.png"))); // NOI18N
@@ -733,143 +784,143 @@ public class GUI extends javax.swing.JFrame {
         sidebarOptions.setForeground(new java.awt.Color(255, 255, 255));
         sidebarOptions.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnDrive5.setBackground(new java.awt.Color(255, 102, 0));
-        btnDrive5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive5.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnUsersSidebar.setBackground(new java.awt.Color(255, 99, 71));
+        btnUsersSidebar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnUsersSidebar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDrive5MouseClicked(evt);
+                btnUsersSidebarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDrive5MouseEntered(evt);
+                btnUsersSidebarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDrive5MouseExited(evt);
+                btnUsersSidebarMouseExited(evt);
             }
         });
-        btnDrive5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnUsersSidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel32.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setText("Eventos");
-        btnDrive5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
+        jLabel32.setText("Users");
+        btnUsersSidebar.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
 
-        sidebarOptions.add(btnDrive5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 190, 40));
+        sidebarOptions.add(btnUsersSidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 190, 40));
 
-        btnDrive4.setBackground(new java.awt.Color(255, 102, 0));
-        btnDrive4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive4.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnServicesSidebar.setBackground(new java.awt.Color(255, 99, 71));
+        btnServicesSidebar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnServicesSidebar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDrive4MouseClicked(evt);
+                btnServicesSidebarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDrive4MouseEntered(evt);
+                btnServicesSidebarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDrive4MouseExited(evt);
+                btnServicesSidebarMouseExited(evt);
             }
         });
-        btnDrive4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnServicesSidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel31.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("Productos");
-        btnDrive4.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
+        jLabel31.setText("Services");
+        btnServicesSidebar.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
 
-        sidebarOptions.add(btnDrive4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 190, 40));
+        sidebarOptions.add(btnServicesSidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 190, 40));
 
-        btnDrive3.setBackground(new java.awt.Color(255, 102, 0));
-        btnDrive3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive3.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnCustomersSidebar.setBackground(new java.awt.Color(255, 99, 71));
+        btnCustomersSidebar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCustomersSidebar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDrive3MouseClicked(evt);
+                btnCustomersSidebarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDrive3MouseEntered(evt);
+                btnCustomersSidebarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDrive3MouseExited(evt);
+                btnCustomersSidebarMouseExited(evt);
             }
         });
-        btnDrive3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnCustomersSidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel30.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setText("Clientes");
-        btnDrive3.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
+        jLabel30.setText("Customers");
+        btnCustomersSidebar.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
 
-        sidebarOptions.add(btnDrive3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 190, 40));
+        sidebarOptions.add(btnCustomersSidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 190, 40));
 
-        btnDrive2.setBackground(new java.awt.Color(255, 102, 0));
-        btnDrive2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnPersonalsSidebar.setBackground(new java.awt.Color(255, 99, 71));
+        btnPersonalsSidebar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPersonalsSidebar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDrive2MouseClicked(evt);
+                btnPersonalsSidebarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDrive2MouseEntered(evt);
+                btnPersonalsSidebarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDrive2MouseExited(evt);
+                btnPersonalsSidebarMouseExited(evt);
             }
         });
-        btnDrive2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnPersonalsSidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel29.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("Personals");
-        btnDrive2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
+        btnPersonalsSidebar.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
 
-        sidebarOptions.add(btnDrive2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 190, 40));
+        sidebarOptions.add(btnPersonalsSidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 190, 40));
 
-        btnDrive1.setBackground(new java.awt.Color(255, 102, 0));
-        btnDrive1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnHome.setBackground(new java.awt.Color(255, 99, 71));
+        btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDrive1MouseClicked(evt);
+                btnHomeMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDrive1MouseEntered(evt);
+                btnHomeMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDrive1MouseExited(evt);
+                btnHomeMouseExited(evt);
             }
         });
-        btnDrive1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnHome.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel28.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("Home");
-        btnDrive1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
+        btnHome.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
 
-        sidebarOptions.add(btnDrive1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 190, 40));
+        sidebarOptions.add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 190, 40));
 
-        btnDrive6.setBackground(new java.awt.Color(255, 102, 0));
-        btnDrive6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDrive6.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSalesSidebar.setBackground(new java.awt.Color(255, 99, 71));
+        btnSalesSidebar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalesSidebar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDrive6MouseClicked(evt);
+                btnSalesSidebarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDrive6MouseEntered(evt);
+                btnSalesSidebarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDrive6MouseExited(evt);
+                btnSalesSidebarMouseExited(evt);
             }
         });
-        btnDrive6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnSalesSidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel33.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel33.setText("Ajustes");
-        btnDrive6.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
+        jLabel33.setText("Sales");
+        btnSalesSidebar.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 190, 20));
 
-        sidebarOptions.add(btnDrive6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 190, 40));
+        sidebarOptions.add(btnSalesSidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 190, 40));
 
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/logo-alf-services.png"))); // NOI18N
@@ -884,25 +935,17 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnIngresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresarMouseClicked
-        userAuth = daoUsers.validateUserAndPassword(txtUsername.getText(), String.valueOf(txtpassword.getPassword()));
-        if (userAuth != null) {
-            sidebarContent.setSelectedComponent(sidebarOptions);
-            bodyContent.setSelectedComponent(home);
-        } else {
-            sidebarContent.setSelectedComponent(sidebarLogin);
-            bodyContent.setSelectedComponent(homeLogin);
-            JOptionPane.showMessageDialog(null, "Your credentials are incorrect");
-        }
-    }//GEN-LAST:event_btnIngresarMouseClicked
+    private void btnLogInMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogInMouseClicked
+        this.userAuthentication();
+    }//GEN-LAST:event_btnLogInMouseClicked
 
-    private void btnIngresarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresarMouseEntered
-        btnIngresar.setBackground(new Color(204, 51, 0));
-    }//GEN-LAST:event_btnIngresarMouseEntered
+    private void btnLogInMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogInMouseEntered
+        btnLogIn.setBackground(darkOrange1);
+    }//GEN-LAST:event_btnLogInMouseEntered
 
-    private void btnIngresarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresarMouseExited
-        btnIngresar.setBackground(new Color(255, 102, 51));
-    }//GEN-LAST:event_btnIngresarMouseExited
+    private void btnLogInMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogInMouseExited
+        btnLogIn.setBackground(darkOrange2);
+    }//GEN-LAST:event_btnLogInMouseExited
 
     private void btnMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMenuMouseClicked
         animationSlice.jLabelXRight(-30, 10, 10, 5, btnInternet);
@@ -913,217 +956,254 @@ public class GUI extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnSalirMouseClicked
 
-    private void btnAnotacionesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnotacionesMouseEntered
-        btnAnotaciones.setBackground(new Color(250, 234, 223));
-    }//GEN-LAST:event_btnAnotacionesMouseEntered
+    private void btnCustomersMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersMouseEntered
+        btnCustomers.setBackground(new Color(250, 234, 223));
+    }//GEN-LAST:event_btnCustomersMouseEntered
 
-    private void btnAnotacionesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnotacionesMouseExited
-        btnAnotaciones.setBackground(Color.WHITE);
-    }//GEN-LAST:event_btnAnotacionesMouseExited
+    private void btnCustomersMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersMouseExited
+        btnCustomers.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnCustomersMouseExited
 
-    private void btnAjustesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAjustesMouseEntered
-        btnAjustes.setBackground(new Color(250, 234, 223));
-    }//GEN-LAST:event_btnAjustesMouseEntered
+    private void btnSettingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSettingMouseEntered
+        btnSetting.setBackground(new Color(250, 234, 223));
+    }//GEN-LAST:event_btnSettingMouseEntered
 
-    private void btnAjustesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAjustesMouseExited
-        btnAjustes.setBackground(Color.WHITE);
-    }//GEN-LAST:event_btnAjustesMouseExited
+    private void btnSettingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSettingMouseExited
+        btnSetting.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnSettingMouseExited
 
-    private void bntCronogramaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bntCronogramaMouseEntered
-        bntCronograma.setBackground(new Color(250, 234, 223));
-    }//GEN-LAST:event_bntCronogramaMouseEntered
+    private void btnPersonalsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPersonalsMouseEntered
+        btnPersonals.setBackground(new Color(250, 234, 223));
+    }//GEN-LAST:event_btnPersonalsMouseEntered
 
-    private void bntCronogramaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bntCronogramaMouseExited
-        bntCronograma.setBackground(Color.WHITE);
-    }//GEN-LAST:event_bntCronogramaMouseExited
+    private void btnPersonalsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPersonalsMouseExited
+        btnPersonals.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnPersonalsMouseExited
 
-    private void btnDriveMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDriveMouseEntered
-        btnDrive.setBackground(new Color(250, 234, 223));
-    }//GEN-LAST:event_btnDriveMouseEntered
+    private void btnUsersMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersMouseEntered
+        btnUsers.setBackground(new Color(250, 234, 223));
+    }//GEN-LAST:event_btnUsersMouseEntered
 
-    private void btnDriveMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDriveMouseExited
-        btnDrive.setBackground(Color.WHITE);
-    }//GEN-LAST:event_btnDriveMouseExited
+    private void btnUsersMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersMouseExited
+        btnUsers.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnUsersMouseExited
 
-    private void btnEventosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEventosMouseEntered
-        btnEventos.setBackground(new Color(250, 234, 223));
-    }//GEN-LAST:event_btnEventosMouseEntered
+    private void btnSalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesMouseEntered
+        btnSales.setBackground(new Color(250, 234, 223));
+    }//GEN-LAST:event_btnSalesMouseEntered
 
-    private void btnEventosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEventosMouseExited
-        btnEventos.setBackground(Color.WHITE);
-    }//GEN-LAST:event_btnEventosMouseExited
+    private void btnSalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesMouseExited
+        btnSales.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnSalesMouseExited
 
-    private void btnSociosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSociosMouseEntered
-        btnSocios.setBackground(new Color(250, 234, 223));
-    }//GEN-LAST:event_btnSociosMouseEntered
+    private void btnServicesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseEntered
+        btnServices.setBackground(new Color(250, 234, 223));
+    }//GEN-LAST:event_btnServicesMouseEntered
 
-    private void btnSociosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSociosMouseExited
-        btnSocios.setBackground(Color.WHITE);
-    }//GEN-LAST:event_btnSociosMouseExited
+    private void btnServicesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseExited
+        btnServices.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnServicesMouseExited
 
     private void btnMInimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMInimizeMouseClicked
         this.setState(GUI.ICONIFIED);
     }//GEN-LAST:event_btnMInimizeMouseClicked
 
-    private void btnAddProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProductMouseClicked
+    private void btnDeletePersonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseClicked
         this.deletePersonal();
-    }//GEN-LAST:event_btnAddProductMouseClicked
+    }//GEN-LAST:event_btnDeletePersonalMouseClicked
 
-    private void btnAddProductMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProductMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProductMouseEntered
+    private void btnDeletePersonalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseEntered
+        btnDeletePersonal.setBackground(lightOrange1);
+    }//GEN-LAST:event_btnDeletePersonalMouseEntered
 
-    private void btnAddProductMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProductMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProductMouseExited
+    private void btnDeletePersonalMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseExited
+        btnDeletePersonal.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnDeletePersonalMouseExited
 
-    private void btnDriveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDriveMouseClicked
+    private void btnUsersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersMouseClicked
         bodyContent.setSelectedComponent(personalsIndex);
-    }//GEN-LAST:event_btnDriveMouseClicked
+    }//GEN-LAST:event_btnUsersMouseClicked
 
     private void btnInternetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInternetMouseClicked
         this.goToWebSiteEcosiaSearch();
     }//GEN-LAST:event_btnInternetMouseClicked
 
-    private void btnDrive1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive1MouseClicked
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        bodyContent.setSelectedComponent(home);
+        lblTitle.setText(">Home");
+    }//GEN-LAST:event_btnHomeMouseClicked
 
-    private void btnDrive1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive1MouseEntered
+    private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
+        btnHome.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnHomeMouseEntered
 
-    private void btnDrive1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive1MouseExited
+    private void btnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseExited
+        btnHome.setBackground(iconOrange);
+    }//GEN-LAST:event_btnHomeMouseExited
 
-    private void btnDrive2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive2MouseClicked
+    private void btnPersonalsSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPersonalsSidebarMouseClicked
         bodyContent.setSelectedComponent(personalsIndex);
-    }//GEN-LAST:event_btnDrive2MouseClicked
+        this.listPersonals();
+        lblTitle.setText(">Personal>Index");
+    }//GEN-LAST:event_btnPersonalsSidebarMouseClicked
 
-    private void btnDrive2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive2MouseEntered
+    private void btnPersonalsSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPersonalsSidebarMouseEntered
+        btnPersonalsSidebar.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnPersonalsSidebarMouseEntered
+
+    private void btnPersonalsSidebarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPersonalsSidebarMouseExited
+        btnPersonalsSidebar.setBackground(iconOrange);
+    }//GEN-LAST:event_btnPersonalsSidebarMouseExited
+
+    private void btnCustomersSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersSidebarMouseClicked
+        
+    }//GEN-LAST:event_btnCustomersSidebarMouseClicked
+
+    private void btnCustomersSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersSidebarMouseEntered
+        btnCustomersSidebar.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnCustomersSidebarMouseEntered
+
+    private void btnCustomersSidebarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersSidebarMouseExited
+        btnCustomersSidebar.setBackground(iconOrange);
+    }//GEN-LAST:event_btnCustomersSidebarMouseExited
+
+    private void btnServicesSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesSidebarMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive2MouseEntered
+    }//GEN-LAST:event_btnServicesSidebarMouseClicked
 
-    private void btnDrive2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive2MouseExited
+    private void btnServicesSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesSidebarMouseEntered
+        btnServicesSidebar.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnServicesSidebarMouseEntered
+
+    private void btnServicesSidebarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesSidebarMouseExited
+        btnServicesSidebar.setBackground(iconOrange);
+    }//GEN-LAST:event_btnServicesSidebarMouseExited
+
+    private void btnUsersSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersSidebarMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive2MouseExited
+    }//GEN-LAST:event_btnUsersSidebarMouseClicked
 
-    private void btnDrive3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive3MouseClicked
+    private void btnUsersSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersSidebarMouseEntered
+        btnUsersSidebar.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnUsersSidebarMouseEntered
+
+    private void btnUsersSidebarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersSidebarMouseExited
+        btnUsersSidebar.setBackground(iconOrange);
+    }//GEN-LAST:event_btnUsersSidebarMouseExited
+
+    private void btnSalesSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesSidebarMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive3MouseClicked
+    }//GEN-LAST:event_btnSalesSidebarMouseClicked
 
-    private void btnDrive3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive3MouseEntered
+    private void btnSalesSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesSidebarMouseEntered
+        btnSalesSidebar.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnSalesSidebarMouseEntered
 
-    private void btnDrive3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive3MouseExited
+    private void btnSalesSidebarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesSidebarMouseExited
+        btnSalesSidebar.setBackground(iconOrange);
+    }//GEN-LAST:event_btnSalesSidebarMouseExited
 
-    private void btnDrive4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive4MouseClicked
-
-    private void btnDrive4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive4MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive4MouseEntered
-
-    private void btnDrive4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive4MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive4MouseExited
-
-    private void btnDrive5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive5MouseClicked
-
-    private void btnDrive5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive5MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive5MouseEntered
-
-    private void btnDrive5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive5MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive5MouseExited
-
-    private void btnDrive6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive6MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive6MouseClicked
-
-    private void btnDrive6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive6MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive6MouseEntered
-
-    private void btnDrive6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrive6MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDrive6MouseExited
-
-    private void btnAddProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct1MouseClicked
+    private void btnAddPersonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonalMouseClicked
         this.clearPersonalFields();
         bodyContent.setSelectedComponent(personalsForm);
-    }//GEN-LAST:event_btnAddProduct1MouseClicked
+        lblTitle.setText(">Personal>NewRecord");
+    }//GEN-LAST:event_btnAddPersonalMouseClicked
 
-    private void btnAddProduct1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct1MouseEntered
+    private void btnAddPersonalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonalMouseEntered
+        btnAddPersonal.setBackground(darkOrange1);
+    }//GEN-LAST:event_btnAddPersonalMouseEntered
 
-    private void btnAddProduct1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct1MouseExited
+    private void btnAddPersonalMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonalMouseExited
+        btnAddPersonal.setBackground(darkOrange2);
+    }//GEN-LAST:event_btnAddPersonalMouseExited
 
-    private void btnAddProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct2MouseClicked
-        if (txtPersonalID.getText().equals("0"))
-            this.savePersonal();
-        else
-            this.updatePersonal();
-    }//GEN-LAST:event_btnAddProduct2MouseClicked
+    private void btnSavePersonalsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonalsMouseClicked
+        if (FieldsValidator.isCompletedFields(new Object[]{txtPersonalCI, txtPersonalFirsName, txtPersonalLastName, txtPersonalPhone, txtPersonalAddress})){
+            if (txtPersonalID.getText().equals("0"))
+                this.savePersonal();
+            else
+                this.updatePersonal();
 
-    private void btnAddProduct2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct2MouseEntered
+            lblTitle.setText(">Personal>Index");
+        } else
+            JOptionPane.showMessageDialog(null, "Complete all fields");
+    }//GEN-LAST:event_btnSavePersonalsMouseClicked
 
-    private void btnAddProduct2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct2MouseExited
+    private void btnSavePersonalsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonalsMouseEntered
+        btnSavePersonals.setBackground(lightOrange2);
+    }//GEN-LAST:event_btnSavePersonalsMouseEntered
 
-    private void btnAddProduct3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct3MouseClicked
+    private void btnSavePersonalsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonalsMouseExited
+        btnSavePersonals.setBackground(darkOrange2);
+    }//GEN-LAST:event_btnSavePersonalsMouseExited
+
+    private void btnBackPersonalsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonalsMouseClicked
         bodyContent.setSelectedComponent(personalsIndex);
-    }//GEN-LAST:event_btnAddProduct3MouseClicked
+        lblTitle.setText(">Personal>Index");
+    }//GEN-LAST:event_btnBackPersonalsMouseClicked
 
-    private void btnAddProduct3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct3MouseEntered
+    private void btnBackPersonalsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonalsMouseEntered
+        btnBackPersonals.setBackground(lightOrange1);
+    }//GEN-LAST:event_btnBackPersonalsMouseEntered
 
-    private void btnAddProduct3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct3MouseExited
+    private void btnBackPersonalsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonalsMouseExited
+        btnBackPersonals.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnBackPersonalsMouseExited
 
-    private void btnAddProduct4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct4MouseClicked
+    private void btnShowPersonalsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonalsMouseClicked
         this.listPersonals();
-    }//GEN-LAST:event_btnAddProduct4MouseClicked
+    }//GEN-LAST:event_btnShowPersonalsMouseClicked
 
-    private void btnAddProduct4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct4MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct4MouseEntered
+    private void btnShowPersonalsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonalsMouseEntered
+        btnShowPersonals.setBackground(lightOrange1);
+    }//GEN-LAST:event_btnShowPersonalsMouseEntered
 
-    private void btnAddProduct4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct4MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct4MouseExited
+    private void btnShowPersonalsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonalsMouseExited
+        btnShowPersonals.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnShowPersonalsMouseExited
 
-    private void btnAddProduct5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct5MouseClicked
+    private void btnEditPersonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonalMouseClicked
         bodyContent.setSelectedComponent(personalsForm);
-    }//GEN-LAST:event_btnAddProduct5MouseClicked
+        lblTitle.setText(">Personal>EditRecord");
+    }//GEN-LAST:event_btnEditPersonalMouseClicked
 
-    private void btnAddProduct5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct5MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct5MouseEntered
+    private void btnEditPersonalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonalMouseEntered
+        btnEditPersonal.setBackground(lightOrange1);
+    }//GEN-LAST:event_btnEditPersonalMouseEntered
 
-    private void btnAddProduct5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddProduct5MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddProduct5MouseExited
+    private void btnEditPersonalMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonalMouseExited
+        btnEditPersonal.setBackground(Color.WHITE);
+    }//GEN-LAST:event_btnEditPersonalMouseExited
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         this.selectPersonal();
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void txtpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpasswordActionPerformed
+        this.userAuthentication();
+    }//GEN-LAST:event_txtpasswordActionPerformed
+
+    private void btnPersonalsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPersonalsMouseClicked
+        bodyContent.setSelectedComponent(personalsIndex);
+        this.listPersonals();
+        lblTitle.setText(">Personal>Index");
+    }//GEN-LAST:event_btnPersonalsMouseClicked
+
+    private void btnSalirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseEntered
+        btnSalir.setBackground(Color.RED);
+    }//GEN-LAST:event_btnSalirMouseEntered
+
+    private void btnSalirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseExited
+        btnSalir.setBackground(new Color(255,237,237));
+    }//GEN-LAST:event_btnSalirMouseExited
+
+    private void btnMInimizeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMInimizeMouseEntered
+        btnMInimize.setBackground(Color.GRAY);
+    }//GEN-LAST:event_btnMInimizeMouseEntered
+
+    private void btnMInimizeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMInimizeMouseExited
+        btnMInimize.setBackground(new Color(255,237,237));
+    }//GEN-LAST:event_btnMInimizeMouseExited
 
     /**
      * @param args the command line arguments
@@ -1139,30 +1219,30 @@ public class GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
-    private javax.swing.JPanel bntCronograma;
     private javax.swing.JTabbedPane bodyContent;
-    private javax.swing.JPanel btnAddProduct;
-    private javax.swing.JPanel btnAddProduct1;
-    private javax.swing.JPanel btnAddProduct2;
-    private javax.swing.JPanel btnAddProduct3;
-    private javax.swing.JPanel btnAddProduct4;
-    private javax.swing.JPanel btnAddProduct5;
-    private javax.swing.JPanel btnAjustes;
-    private javax.swing.JPanel btnAnotaciones;
-    private javax.swing.JPanel btnDrive;
-    private javax.swing.JPanel btnDrive1;
-    private javax.swing.JPanel btnDrive2;
-    private javax.swing.JPanel btnDrive3;
-    private javax.swing.JPanel btnDrive4;
-    private javax.swing.JPanel btnDrive5;
-    private javax.swing.JPanel btnDrive6;
-    private javax.swing.JPanel btnEventos;
-    private javax.swing.JPanel btnIngresar;
+    private javax.swing.JPanel btnAddPersonal;
+    private javax.swing.JPanel btnBackPersonals;
+    private javax.swing.JPanel btnCustomers;
+    private javax.swing.JPanel btnCustomersSidebar;
+    private javax.swing.JPanel btnDeletePersonal;
+    private javax.swing.JPanel btnEditPersonal;
+    private javax.swing.JPanel btnHome;
     private javax.swing.JLabel btnInternet;
+    private javax.swing.JPanel btnLogIn;
     private javax.swing.JLabel btnMInimize;
     private javax.swing.JLabel btnMenu;
+    private javax.swing.JPanel btnPersonals;
+    private javax.swing.JPanel btnPersonalsSidebar;
+    private javax.swing.JPanel btnSales;
+    private javax.swing.JPanel btnSalesSidebar;
     private javax.swing.JLabel btnSalir;
-    private javax.swing.JPanel btnSocios;
+    private javax.swing.JPanel btnSavePersonals;
+    private javax.swing.JPanel btnServices;
+    private javax.swing.JPanel btnServicesSidebar;
+    private javax.swing.JPanel btnSetting;
+    private javax.swing.JPanel btnShowPersonals;
+    private javax.swing.JPanel btnUsers;
+    private javax.swing.JPanel btnUsersSidebar;
     private javax.swing.JPanel headerContent;
     private javax.swing.JPanel home;
     private javax.swing.JPanel homeLogin;
@@ -1214,6 +1294,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lblTitle;
     private javax.swing.JPanel personalsForm;
     private javax.swing.JPanel personalsIndex;
     private javax.swing.JTabbedPane sidebarContent;
@@ -1274,11 +1355,11 @@ public class GUI extends javax.swing.JFrame {
 
         DefaultTableModel modelTable = new DefaultTableModel(
                 null,
-                new Object[]{"ID", "CI", "FIRSTNAME", "LASTNAME", "PHONE", "ADDRESS", "CREATEDAT"}
+                new Object[]{"ID", "CI", "FIRSTNAME", "LASTNAME", "PHONE", "ADDRESS", "BIRTHDAY"}
         );
 
         personals.forEach((value) -> {
-            modelTable.addRow(new Object[]{value.getId(), value.getCi(), value.getFirstName(), value.getLastName(), value.getPhone(), value.getAddress(), value.getAddress()});
+            modelTable.addRow(new Object[]{value.getId(), value.getCi(), value.getFirstName(), value.getLastName(), value.getPhone(), value.getAddress(), value.getBirthday()});
         });
 
         jTable1.setModel(modelTable);
@@ -1345,6 +1426,18 @@ public class GUI extends javax.swing.JFrame {
             }
         } else
             javax.swing.JOptionPane.showMessageDialog(null, "You most select a row from the table");
+    }
+
+    private void userAuthentication() {
+        userAuth = daoUsers.validateUserAndPassword(txtUsername.getText(), String.valueOf(txtpassword.getPassword()));
+        if (userAuth != null) {
+            sidebarContent.setSelectedComponent(sidebarOptions);
+            bodyContent.setSelectedComponent(home);
+        } else {
+            sidebarContent.setSelectedComponent(sidebarLogin);
+            bodyContent.setSelectedComponent(homeLogin);
+            JOptionPane.showMessageDialog(null, "Your credentials are incorrect");
+        }
     }
 
 }
