@@ -123,4 +123,16 @@ public class DaoUsers {
 
         return user;
     }
+
+    public Users validateUserAndPassword(String username, String password) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        String hql = "FROM Users where name = :name AND password = md5(:password)";
+        Query query = session.createQuery(hql);
+        query.setParameter("name", username);
+        query.setParameter("password", password);
+        Users user = (Users) query.uniqueResult();
+        session.close();
+
+        return user;
+    }
 }

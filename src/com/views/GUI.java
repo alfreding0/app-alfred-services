@@ -7,7 +7,9 @@ package com.views;
 
 import AppPackage.AnimationClass;
 import com.dao.DaoPersonals;
+import com.dao.DaoUsers;
 import com.pojos.Personals;
+import com.pojos.Users;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.io.IOException;
@@ -34,20 +36,16 @@ public class GUI extends javax.swing.JFrame {
 
     Personals personal = new Personals();
     DaoPersonals daoPersonals = new DaoPersonals();
+    
+    Users userAuth = null;
+    
+    Users user = new Users();
+    DaoUsers daoUsers = new DaoUsers();
 
     public GUI() {
         initComponents();
 
         this.setLocationRelativeTo(null);
-
-        String response = javax.swing.JOptionPane.showInputDialog("You're Log In?");
-        if (response.equals("NO")) {
-            sidebarContent.setSelectedComponent(sidebarLogin);
-            bodyContent.setSelectedComponent(contentLogIn);
-        } else {
-            sidebarContent.setSelectedComponent(sidebarOptions);
-            bodyContent.setSelectedComponent(home);
-        }
     }
 
     /**
@@ -67,7 +65,7 @@ public class GUI extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         txtBuscar = new javax.swing.JTextField();
         bodyContent = new javax.swing.JTabbedPane();
-        contentLogIn = new javax.swing.JPanel();
+        homeLogin = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -125,7 +123,7 @@ public class GUI extends javax.swing.JFrame {
         sidebarLogin = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         txtUsername = new javax.swing.JTextField();
-        passwordusername = new javax.swing.JPasswordField();
+        txtpassword = new javax.swing.JPasswordField();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
@@ -202,32 +200,32 @@ public class GUI extends javax.swing.JFrame {
         bodyContent.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         bodyContent.setForeground(new java.awt.Color(255, 255, 255));
 
-        contentLogIn.setBackground(new java.awt.Color(255, 255, 255));
-        contentLogIn.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        homeLogin.setBackground(new java.awt.Color(255, 255, 255));
+        homeLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/logo-alf-services.png"))); // NOI18N
-        contentLogIn.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 150, 140));
+        homeLogin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 150, 140));
 
         jLabel25.setFont(new java.awt.Font("Corbel", 1, 60)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 102, 0));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Alfred Services");
-        contentLogIn.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 730, 110));
+        homeLogin.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 730, 110));
 
         jLabel26.setFont(new java.awt.Font("Courier New", 1, 60)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 102, 0));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel26.setText("1");
-        contentLogIn.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 60, 110));
+        homeLogin.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 60, 110));
 
         jLabel34.setFont(new java.awt.Font("Corbel", 1, 60)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 102, 0));
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel34.setText("Desktop App #");
-        contentLogIn.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 710, 110));
+        homeLogin.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 710, 110));
 
-        bodyContent.addTab("homeLogin", contentLogIn);
+        bodyContent.addTab("homeLogin", homeLogin);
 
         home.setBackground(new java.awt.Color(255, 255, 255));
         home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -657,12 +655,12 @@ public class GUI extends javax.swing.JFrame {
         txtUsername.setOpaque(false);
         sidebarLogin.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 150, 30));
 
-        passwordusername.setBackground(new java.awt.Color(255, 255, 255));
-        passwordusername.setForeground(new java.awt.Color(102, 102, 102));
-        passwordusername.setText("jPasswordField1");
-        passwordusername.setBorder(null);
-        passwordusername.setOpaque(false);
-        sidebarLogin.add(passwordusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 150, 30));
+        txtpassword.setBackground(new java.awt.Color(255, 255, 255));
+        txtpassword.setForeground(new java.awt.Color(102, 102, 102));
+        txtpassword.setText("jPasswordField1");
+        txtpassword.setBorder(null);
+        txtpassword.setOpaque(false);
+        sidebarLogin.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 150, 30));
 
         jSeparator2.setForeground(new java.awt.Color(102, 102, 102));
         sidebarLogin.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 150, 10));
@@ -887,9 +885,15 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIngresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresarMouseClicked
-        bodyContent.setSelectedComponent(contentLogIn);
-        sidebarContent.setSelectedComponent(headerContent);
-        javax.swing.JOptionPane.showMessageDialog(null, "Ingresando....");
+        userAuth = daoUsers.validateUserAndPassword(txtUsername.getText(), String.valueOf(txtpassword.getPassword()));
+        if (userAuth != null) {
+            sidebarContent.setSelectedComponent(sidebarOptions);
+            bodyContent.setSelectedComponent(home);
+        } else {
+            sidebarContent.setSelectedComponent(sidebarLogin);
+            bodyContent.setSelectedComponent(homeLogin);
+            JOptionPane.showMessageDialog(null, "Your credentials are incorrect");
+        }
     }//GEN-LAST:event_btnIngresarMouseClicked
 
     private void btnIngresarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresarMouseEntered
@@ -1159,9 +1163,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel btnMenu;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JPanel btnSocios;
-    private javax.swing.JPanel contentLogIn;
     private javax.swing.JPanel headerContent;
     private javax.swing.JPanel home;
+    private javax.swing.JPanel homeLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1210,7 +1214,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTable jTable1;
-    private javax.swing.JPasswordField passwordusername;
     private javax.swing.JPanel personalsForm;
     private javax.swing.JPanel personalsIndex;
     private javax.swing.JTabbedPane sidebarContent;
@@ -1225,6 +1228,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtPersonalLastName;
     private javax.swing.JTextField txtPersonalPhone;
     private javax.swing.JTextField txtUsername;
+    private javax.swing.JPasswordField txtpassword;
     // End of variables declaration//GEN-END:variables
 
     private void goToWebSiteEcosiaSearch() {
