@@ -6,6 +6,7 @@
 package com.dao;
 
 import com.pojos.Personals;
+import com.pojos.Users;
 import com.utils.HibernateUtil;
 import java.util.List;
 import org.hibernate.HibernateException;
@@ -106,6 +107,17 @@ public class DaoPersonals{
         session.close();
 
         return personal;
+    }
+    
+    public com.pojos.Users getUserAccount(int personal_id) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        String hql = "FROM Users where personal_id = :personal_id";
+        Query query = session.createQuery(hql);
+        query.setParameter("personal_id", personal_id);
+        com.pojos.Users user = (Users) query.uniqueResult();
+        session.close();
+
+        return user;
     }
 
     public List<Personals> findPersonalForFirstName(String value) {

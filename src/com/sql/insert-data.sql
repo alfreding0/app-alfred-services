@@ -96,7 +96,7 @@ values
     'yessica',
     'yessica@gmail.com',
     md5('yessicapass'),
-    3
+    2
 );
 
 insert into services(

@@ -18,12 +18,10 @@ import java.io.IOException;
 import java.net.URI;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -39,21 +37,21 @@ public class GUI extends javax.swing.JFrame {
 
     Personals personal = new Personals();
     DaoPersonals daoPersonals = new DaoPersonals();
-    
+
     Users userAuth = null;
-    
+
     Users user = new Users();
     DaoUsers daoUsers = new DaoUsers();
-    
+
     
     
     //COLORS
-    Color darkOrange2 = new Color(255,102,51);
-    Color darkOrange1 = new Color(255,128,86);
+    Color darkOrange2 = new Color(255, 102, 51);
+    Color darkOrange1 = new Color(255, 128, 86);
     Color lightOrange1 = new Color(250, 234, 223);
-    Color lightOrange2 = new Color(250,134,112);
+    Color lightOrange2 = new Color(250, 134, 112);
     Color iconOrange = new Color(255, 99, 71);
-    
+
 
     public GUI() {
         initComponents();
@@ -310,6 +308,7 @@ public class GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         background.setBackground(new java.awt.Color(153, 153, 153));
@@ -2404,10 +2403,11 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnDeletePersonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseClicked
         int numberRowsSelected = jTable1.getSelectedRowCount();
-        if (numberRowsSelected == 1)
+        if (numberRowsSelected == 1) {
             this.deletePersonal();
-        else
+        } else {
             this.deleteManyPersonals();
+        }
     }//GEN-LAST:event_btnDeletePersonalMouseClicked
 
     private void btnDeletePersonalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonalMouseEntered
@@ -2516,15 +2516,17 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddPersonalMouseExited
 
     private void btnSavePersonalsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonalsMouseClicked
-        if (FieldsValidator.isCompletedFields(new Object[]{txtPersonalCI, txtPersonalFirsName, txtPersonalLastName, txtPersonalPhone, txtPersonalAddress})){
-            if (txtPersonalID.getText().equals("0"))
+        if (FieldsValidator.isCompletedFields(new Object[]{txtPersonalCI, txtPersonalFirsName, txtPersonalLastName, txtPersonalPhone, txtPersonalAddress})) {
+            if (txtPersonalID.getText().equals("0")) {
                 this.savePersonal();
-            else
+            } else {
                 this.updatePersonal();
+            }
 
             lblTitle.setText(">Personal>Index");
-        } else
+        } else {
             JOptionPane.showMessageDialog(null, "Complete all fields");
+        }
     }//GEN-LAST:event_btnSavePersonalsMouseClicked
 
     private void btnSavePersonalsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonalsMouseEntered
@@ -2592,7 +2594,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirMouseEntered
 
     private void btnSalirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseExited
-        btnSalir.setBackground(new Color(255,237,237));
+        btnSalir.setBackground(new Color(255, 237, 237));
     }//GEN-LAST:event_btnSalirMouseExited
 
     private void btnMInimizeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMInimizeMouseEntered
@@ -2600,7 +2602,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMInimizeMouseEntered
 
     private void btnMInimizeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMInimizeMouseExited
-        btnMInimize.setBackground(new Color(255,237,237));
+        btnMInimize.setBackground(new Color(255, 237, 237));
     }//GEN-LAST:event_btnMInimizeMouseExited
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
@@ -3239,7 +3241,7 @@ public class GUI extends javax.swing.JFrame {
         }
     }
 
-    private void setDataInTable(List<Personals> personals){
+    private void setDataInTable(List<Personals> personals) {
         DefaultTableModel modelTable = new DefaultTableModel(
                 null,
                 new Object[]{"ID", "CI", "FIRSTNAME", "LASTNAME", "PHONE", "ADDRESS", "BIRTHDAY"}
@@ -3251,7 +3253,7 @@ public class GUI extends javax.swing.JFrame {
 
         jTable1.setModel(modelTable);
     }
-    
+
     private void listPersonals() {
         List<Personals> personals = daoPersonals.getListPersonals();
         this.setDataInTable(personals);
@@ -3287,9 +3289,9 @@ public class GUI extends javax.swing.JFrame {
     private void updatePersonal() {
         personal = new Personals(txtPersonalCI.getText(), txtPersonalFirsName.getText(), txtPersonalLastName.getText(), txtPersonalPhone.getText(), txtPersonalAddress.getText(), txtPersonalBirthday.getDate());
         personal.setId(Integer.parseInt(txtPersonalID.getText()));
-        
+
         daoPersonals.update(personal);
-        
+
         bodyContent.setSelectedComponent(personalsIndex);
         this.listPersonals();
     }
@@ -3305,31 +3307,63 @@ public class GUI extends javax.swing.JFrame {
     }
 
     private void deletePersonal() {
-        if (! txtPersonalID.getText().equals("0")){
+        if (!txtPersonalID.getText().equals("0")) {
             int response = javax.swing.JOptionPane.showConfirmDialog(null, "Are you sure to delete this record?");
-            if (response == JOptionPane.YES_OPTION){
-                personal = daoPersonals.find(Integer.parseInt(txtPersonalID.getText()));
+            if (response == JOptionPane.YES_OPTION) {
+                int personalId = Integer.parseInt(txtPersonalID.getText());
+                personal = daoPersonals.find(personalId);
+                user = daoPersonals.getUserAccount(personalId);
+
                 daoPersonals.delete(personal);
-                
+
                 txtPersonalID.setText("0");
 
                 bodyContent.setSelectedComponent(personalsIndex);
-                this.listPersonals();
+
+                //This condition is only necessary here in personal
+                if (!this.userIsAuthenticatedInThisApplication(user)) {
+                    this.listPersonals();
+                }
             }
-        } else
+        } else {
             javax.swing.JOptionPane.showMessageDialog(null, "You most select a row from the table");
+        }
+    }
+
+    private boolean authenticationRedirect() {
+        if (userAuth != null) {
+            sidebarContent.setSelectedComponent(sidebarOptions);
+            bodyContent.setSelectedComponent(home);
+            return true;
+        } else {
+            sidebarContent.setSelectedComponent(sidebarLogin);
+            bodyContent.setSelectedComponent(homeLogin);
+            return false;
+        }
     }
 
     private void userAuthentication() {
         userAuth = daoUsers.validateUserAndPassword(txtUsername.getText(), String.valueOf(txtpassword.getPassword()));
-        if (userAuth != null) {
-            sidebarContent.setSelectedComponent(sidebarOptions);
-            bodyContent.setSelectedComponent(home);
-        } else {
-            sidebarContent.setSelectedComponent(sidebarLogin);
-            bodyContent.setSelectedComponent(homeLogin);
-            JOptionPane.showMessageDialog(null, "Your credentials are incorrect");
+        boolean status = this.authenticationRedirect();
+        if (! status)
+            JOptionPane.showMessageDialog(null, "Your credentials are incorrect!");
+    }
+
+    /**
+     * This function is to check if the deleted person has a user account and
+     * has this session active.
+     *
+     * @param user_id
+     */
+    private boolean userIsAuthenticatedInThisApplication(Users userAccount) {
+        if (userAccount != null) {
+            if (userAccount.getId() == userAuth.getId()) {
+                userAuth = null;
+                this.authenticationRedirect();
+                return true;
+            }
         }
+        return false;
     }
 
     private void setNewStyleHeaderTable() {
@@ -3340,22 +3374,26 @@ public class GUI extends javax.swing.JFrame {
     }
 
     private void deleteManyPersonals() {
-        int [] rows = jTable1.getSelectedRows();
-        
+        int[] rows = jTable1.getSelectedRows();
+
         for (int row : rows) {
             int idPersonalSelected = Integer.parseInt(jTable1.getValueAt(row, 0).toString());
             personal = daoPersonals.find(idPersonalSelected);
+            user = daoPersonals.getUserAccount(idPersonalSelected);
+
             daoPersonals.delete(personal);
+
+            this.userIsAuthenticatedInThisApplication(user);
         }
         this.listPersonals();
     }
 
     private void finder() {
-        if (bodyContent.getSelectedComponent().equals(home)){
+        if (bodyContent.getSelectedComponent().equals(home)) {
             System.out.println("To do a regex for find option botton of menu home");
 //            if (whatButtonIsIt(txtBuscar.getText(), "(conf|configu|configuration|configuracion)"))
 //                btnSetting.requestFocus();
-        } else if (bodyContent.getSelectedComponent().equals(personalsIndex)){
+        } else if (bodyContent.getSelectedComponent().equals(personalsIndex)) {
             List<Personals> personals = daoPersonals.findPersonalForFirstName(txtBuscar.getText());
             this.setDataInTable(personals);
         } else if (bodyContent.getSelectedComponent().equals(usersIndex)) {
@@ -3365,7 +3403,7 @@ public class GUI extends javax.swing.JFrame {
         }
     }
 
-    private boolean whatButtonIsIt(String value, String regexPatron){
+    private boolean whatButtonIsIt(String value, String regexPatron) {
 //        String patt = ".*?(?<=\\s|^)conf(?=\\s|$).*";
 //        String patt = "(?¡)(\\W|^)(conf|configu|configuration|configuracion)(\\W|$)";
         String patt = regexPatron;
