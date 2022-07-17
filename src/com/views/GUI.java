@@ -134,6 +134,149 @@ public class GUI extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         txtPersonalBirthday = new com.toedter.calendar.JDateChooser();
+        usersIndex = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        btnDeletePersonal1 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        btnAddPersonal1 = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        btnShowPersonals1 = new javax.swing.JPanel();
+        jLabel47 = new javax.swing.JLabel();
+        btnEditPersonal1 = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        txtPersonalID1 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        usersForm = new javax.swing.JPanel();
+        btnSavePersonals1 = new javax.swing.JPanel();
+        jLabel49 = new javax.swing.JLabel();
+        btnBackPersonals1 = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        txtPersonalCI1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtPersonalFirsName1 = new javax.swing.JTextField();
+        jLabel51 = new javax.swing.JLabel();
+        txtPersonalLastName1 = new javax.swing.JTextField();
+        jLabel52 = new javax.swing.JLabel();
+        txtPersonalPhone1 = new javax.swing.JTextField();
+        jLabel53 = new javax.swing.JLabel();
+        txtPersonalAddress1 = new javax.swing.JTextField();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        txtPersonalBirthday1 = new com.toedter.calendar.JDateChooser();
+        jLabel57 = new javax.swing.JLabel();
+        customersIndex = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        btnDeletePersonal2 = new javax.swing.JPanel();
+        jLabel58 = new javax.swing.JLabel();
+        btnAddPersonal2 = new javax.swing.JPanel();
+        jLabel59 = new javax.swing.JLabel();
+        btnShowPersonals2 = new javax.swing.JPanel();
+        jLabel60 = new javax.swing.JLabel();
+        btnEditPersonal2 = new javax.swing.JPanel();
+        jLabel61 = new javax.swing.JLabel();
+        txtPersonalID2 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        customersForm = new javax.swing.JPanel();
+        btnSavePersonals2 = new javax.swing.JPanel();
+        jLabel63 = new javax.swing.JLabel();
+        btnBackPersonals2 = new javax.swing.JPanel();
+        jLabel64 = new javax.swing.JLabel();
+        txtPersonalCI2 = new javax.swing.JTextField();
+        jLabel65 = new javax.swing.JLabel();
+        txtPersonalFirsName2 = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        txtPersonalLastName2 = new javax.swing.JTextField();
+        jLabel67 = new javax.swing.JLabel();
+        txtPersonalPhone2 = new javax.swing.JTextField();
+        jLabel68 = new javax.swing.JLabel();
+        txtPersonalAddress2 = new javax.swing.JTextField();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        txtPersonalBirthday2 = new com.toedter.calendar.JDateChooser();
+        jLabel71 = new javax.swing.JLabel();
+        servicesIndex = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        btnDeletePersonal3 = new javax.swing.JPanel();
+        jLabel72 = new javax.swing.JLabel();
+        btnAddPersonal3 = new javax.swing.JPanel();
+        jLabel73 = new javax.swing.JLabel();
+        btnShowPersonals3 = new javax.swing.JPanel();
+        jLabel74 = new javax.swing.JLabel();
+        btnEditPersonal3 = new javax.swing.JPanel();
+        jLabel75 = new javax.swing.JLabel();
+        txtPersonalID3 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        servicesForm = new javax.swing.JPanel();
+        btnSavePersonals3 = new javax.swing.JPanel();
+        jLabel77 = new javax.swing.JLabel();
+        btnBackPersonals3 = new javax.swing.JPanel();
+        jLabel78 = new javax.swing.JLabel();
+        txtPersonalCI3 = new javax.swing.JTextField();
+        jLabel79 = new javax.swing.JLabel();
+        txtPersonalFirsName3 = new javax.swing.JTextField();
+        jLabel80 = new javax.swing.JLabel();
+        txtPersonalLastName3 = new javax.swing.JTextField();
+        jLabel81 = new javax.swing.JLabel();
+        txtPersonalPhone3 = new javax.swing.JTextField();
+        jLabel82 = new javax.swing.JLabel();
+        txtPersonalAddress3 = new javax.swing.JTextField();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        txtPersonalBirthday3 = new com.toedter.calendar.JDateChooser();
+        jLabel85 = new javax.swing.JLabel();
+        salesIndex = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        btnDeletePersonal4 = new javax.swing.JPanel();
+        jLabel86 = new javax.swing.JLabel();
+        btnAddPersonal4 = new javax.swing.JPanel();
+        jLabel87 = new javax.swing.JLabel();
+        btnShowPersonals4 = new javax.swing.JPanel();
+        jLabel88 = new javax.swing.JLabel();
+        btnEditPersonal4 = new javax.swing.JPanel();
+        jLabel89 = new javax.swing.JLabel();
+        txtPersonalID4 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        salesForm = new javax.swing.JPanel();
+        btnSavePersonals4 = new javax.swing.JPanel();
+        jLabel91 = new javax.swing.JLabel();
+        btnBackPersonals4 = new javax.swing.JPanel();
+        jLabel92 = new javax.swing.JLabel();
+        txtPersonalCI4 = new javax.swing.JTextField();
+        jLabel93 = new javax.swing.JLabel();
+        txtPersonalFirsName4 = new javax.swing.JTextField();
+        jLabel94 = new javax.swing.JLabel();
+        txtPersonalLastName4 = new javax.swing.JTextField();
+        jLabel95 = new javax.swing.JLabel();
+        txtPersonalPhone4 = new javax.swing.JTextField();
+        jLabel96 = new javax.swing.JLabel();
+        txtPersonalAddress4 = new javax.swing.JTextField();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        txtPersonalBirthday4 = new com.toedter.calendar.JDateChooser();
+        jLabel99 = new javax.swing.JLabel();
+        settings = new javax.swing.JPanel();
+        btnSavePersonals5 = new javax.swing.JPanel();
+        jLabel100 = new javax.swing.JLabel();
+        btnBackPersonals5 = new javax.swing.JPanel();
+        jLabel101 = new javax.swing.JLabel();
+        txtPersonalFirsName5 = new javax.swing.JTextField();
+        jLabel103 = new javax.swing.JLabel();
+        txtPersonalLastName5 = new javax.swing.JTextField();
+        jLabel104 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel108 = new javax.swing.JLabel();
+        txtPersonalFirsName6 = new javax.swing.JTextField();
+        jLabel109 = new javax.swing.JLabel();
+        txtPersonalLastName6 = new javax.swing.JTextField();
+        jLabel110 = new javax.swing.JLabel();
         sidebarContent = new javax.swing.JTabbedPane();
         sidebarLogin = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -230,6 +373,11 @@ public class GUI extends javax.swing.JFrame {
         txtBuscar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtBuscar.setText("Buscar una opción");
         txtBuscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        txtBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBuscarActionPerformed(evt);
+            }
+        });
         headerContent.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 290, 30));
 
         lblTitle.setBackground(new java.awt.Color(255, 99, 71));
@@ -277,6 +425,9 @@ public class GUI extends javax.swing.JFrame {
         btnCustomers.setBackground(new java.awt.Color(255, 255, 255));
         btnCustomers.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCustomers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCustomersMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCustomersMouseEntered(evt);
             }
@@ -301,6 +452,9 @@ public class GUI extends javax.swing.JFrame {
         btnSetting.setBackground(new java.awt.Color(255, 255, 255));
         btnSetting.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSetting.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSettingMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSettingMouseEntered(evt);
             }
@@ -379,6 +533,9 @@ public class GUI extends javax.swing.JFrame {
         btnSales.setBackground(new java.awt.Color(255, 255, 255));
         btnSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSalesMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSalesMouseEntered(evt);
             }
@@ -403,6 +560,9 @@ public class GUI extends javax.swing.JFrame {
         btnServices.setBackground(new java.awt.Color(255, 255, 255));
         btnServices.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnServices.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnServicesMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnServicesMouseEntered(evt);
             }
@@ -688,7 +848,1235 @@ public class GUI extends javax.swing.JFrame {
 
         bodyContent.addTab("Products", personalsForm);
 
-        background.add(bodyContent, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 760, 510));
+        usersIndex.setBackground(new java.awt.Color(255, 255, 255));
+        usersIndex.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable2.setAutoCreateRowSorter(true);
+        jTable2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        jTable2.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jTable2.setFocusable(false);
+        jTable2.setRowHeight(30);
+        jTable2.setSelectionBackground(lightOrange1);
+        jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable2MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(jTable2);
+
+        usersIndex.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 640, 320));
+
+        btnDeletePersonal1.setBackground(new java.awt.Color(255, 255, 255));
+        btnDeletePersonal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnDeletePersonal1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeletePersonal1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal1MouseExited(evt);
+            }
+        });
+        btnDeletePersonal1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel45.setText("DELETE");
+        btnDeletePersonal1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        usersIndex.add(btnDeletePersonal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 130, 40));
+
+        btnAddPersonal1.setBackground(new java.awt.Color(255, 102, 51));
+        btnAddPersonal1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddPersonal1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddPersonal1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddPersonal1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddPersonal1MouseExited(evt);
+            }
+        });
+        btnAddPersonal1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel46.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel46.setText("ADD");
+        btnAddPersonal1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        usersIndex.add(btnAddPersonal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        btnShowPersonals1.setBackground(new java.awt.Color(255, 255, 255));
+        btnShowPersonals1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnShowPersonals1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnShowPersonals1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnShowPersonals1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnShowPersonals1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnShowPersonals1MouseExited(evt);
+            }
+        });
+        btnShowPersonals1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel47.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel47.setText("SHOW ALL");
+        btnShowPersonals1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        usersIndex.add(btnShowPersonals1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 130, 40));
+
+        btnEditPersonal1.setBackground(new java.awt.Color(255, 255, 255));
+        btnEditPersonal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnEditPersonal1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditPersonal1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEditPersonal1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnEditPersonal1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnEditPersonal1MouseExited(evt);
+            }
+        });
+        btnEditPersonal1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel48.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setText("EDIT");
+        btnEditPersonal1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        usersIndex.add(btnEditPersonal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 130, 40));
+
+        txtPersonalID1.setFont(new java.awt.Font("Corbel", 1, 36)); // NOI18N
+        txtPersonalID1.setForeground(new java.awt.Color(153, 51, 0));
+        txtPersonalID1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        txtPersonalID1.setText("0");
+        txtPersonalID1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 2, new java.awt.Color(204, 51, 0)));
+        txtPersonalID1.setFocusable(false);
+        usersIndex.add(txtPersonalID1, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 40, 50, 40));
+
+        jLabel56.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel56.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel56.setText("Without Data! To Do.");
+        jLabel56.setOpaque(true);
+        usersIndex.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 710, -1));
+
+        bodyContent.addTab("Products", usersIndex);
+
+        usersForm.setBackground(new java.awt.Color(255, 255, 255));
+        usersForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSavePersonals1.setBackground(new java.awt.Color(255, 102, 51));
+        btnSavePersonals1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSavePersonals1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSavePersonals1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSavePersonals1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSavePersonals1MouseExited(evt);
+            }
+        });
+        btnSavePersonals1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel49.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel49.setText("SAVE");
+        btnSavePersonals1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        usersForm.add(btnSavePersonals1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
+
+        btnBackPersonals1.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackPersonals1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnBackPersonals1.setForeground(new java.awt.Color(0, 0, 0));
+        btnBackPersonals1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBackPersonals1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackPersonals1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBackPersonals1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBackPersonals1MouseExited(evt);
+            }
+        });
+        btnBackPersonals1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel50.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel50.setText("BACK");
+        btnBackPersonals1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        usersForm.add(btnBackPersonals1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        txtPersonalCI1.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalCI1.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalCI1.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalCI1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalCI1.setText("Write here");
+        txtPersonalCI1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        usersForm.add(txtPersonalCI1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 290, 30));
+
+        jLabel4.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel4.setText("CI");
+        usersForm.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 100, -1));
+
+        txtPersonalFirsName1.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalFirsName1.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalFirsName1.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalFirsName1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalFirsName1.setText("Write here");
+        txtPersonalFirsName1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        usersForm.add(txtPersonalFirsName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, 30));
+
+        jLabel51.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel51.setText("FIRST NAME");
+        usersForm.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 100, -1));
+
+        txtPersonalLastName1.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalLastName1.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalLastName1.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalLastName1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalLastName1.setText("Write here");
+        txtPersonalLastName1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        usersForm.add(txtPersonalLastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 290, 30));
+
+        jLabel52.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel52.setText("LAST NAME");
+        usersForm.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 100, -1));
+
+        txtPersonalPhone1.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalPhone1.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalPhone1.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalPhone1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalPhone1.setText("Write here");
+        txtPersonalPhone1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        usersForm.add(txtPersonalPhone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 290, 30));
+
+        jLabel53.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel53.setText("PHONE");
+        usersForm.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 100, -1));
+
+        txtPersonalAddress1.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalAddress1.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalAddress1.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalAddress1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalAddress1.setText("Write here");
+        txtPersonalAddress1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        usersForm.add(txtPersonalAddress1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 290, 30));
+
+        jLabel54.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel54.setText("ADDRESS");
+        usersForm.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, -1));
+
+        jLabel55.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel55.setText("BIRTHDAY");
+        usersForm.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 100, -1));
+
+        jPanel2.setBackground(new java.awt.Color(255, 102, 0));
+        usersForm.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 720, 10));
+
+        txtPersonalBirthday1.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalBirthday1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        txtPersonalBirthday1.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        usersForm.add(txtPersonalBirthday1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 249, 290, 30));
+
+        jLabel57.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel57.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel57.setText("Without Data! To Do.");
+        jLabel57.setOpaque(true);
+        usersForm.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 750, -1));
+
+        bodyContent.addTab("Products", usersForm);
+
+        customersIndex.setBackground(new java.awt.Color(255, 255, 255));
+        customersIndex.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable3.setAutoCreateRowSorter(true);
+        jTable3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        jTable3.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jTable3.setFocusable(false);
+        jTable3.setRowHeight(30);
+        jTable3.setSelectionBackground(lightOrange1);
+        jTable3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable3MouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(jTable3);
+
+        customersIndex.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 640, 320));
+
+        btnDeletePersonal2.setBackground(new java.awt.Color(255, 255, 255));
+        btnDeletePersonal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnDeletePersonal2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeletePersonal2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal2MouseExited(evt);
+            }
+        });
+        btnDeletePersonal2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel58.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel58.setText("DELETE");
+        btnDeletePersonal2.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        customersIndex.add(btnDeletePersonal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 130, 40));
+
+        btnAddPersonal2.setBackground(new java.awt.Color(255, 102, 51));
+        btnAddPersonal2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddPersonal2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddPersonal2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddPersonal2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddPersonal2MouseExited(evt);
+            }
+        });
+        btnAddPersonal2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel59.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel59.setText("ADD");
+        btnAddPersonal2.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        customersIndex.add(btnAddPersonal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        btnShowPersonals2.setBackground(new java.awt.Color(255, 255, 255));
+        btnShowPersonals2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnShowPersonals2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnShowPersonals2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnShowPersonals2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnShowPersonals2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnShowPersonals2MouseExited(evt);
+            }
+        });
+        btnShowPersonals2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel60.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel60.setText("SHOW ALL");
+        btnShowPersonals2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        customersIndex.add(btnShowPersonals2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 130, 40));
+
+        btnEditPersonal2.setBackground(new java.awt.Color(255, 255, 255));
+        btnEditPersonal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnEditPersonal2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditPersonal2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEditPersonal2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnEditPersonal2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnEditPersonal2MouseExited(evt);
+            }
+        });
+        btnEditPersonal2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel61.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel61.setText("EDIT");
+        btnEditPersonal2.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        customersIndex.add(btnEditPersonal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 130, 40));
+
+        txtPersonalID2.setFont(new java.awt.Font("Corbel", 1, 36)); // NOI18N
+        txtPersonalID2.setForeground(new java.awt.Color(153, 51, 0));
+        txtPersonalID2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        txtPersonalID2.setText("0");
+        txtPersonalID2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 2, new java.awt.Color(204, 51, 0)));
+        txtPersonalID2.setFocusable(false);
+        customersIndex.add(txtPersonalID2, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 40, 50, 40));
+
+        jLabel62.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel62.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel62.setText("Without Data! To Do.");
+        jLabel62.setOpaque(true);
+        customersIndex.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 710, -1));
+
+        bodyContent.addTab("Products", customersIndex);
+
+        customersForm.setBackground(new java.awt.Color(255, 255, 255));
+        customersForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSavePersonals2.setBackground(new java.awt.Color(255, 102, 51));
+        btnSavePersonals2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSavePersonals2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSavePersonals2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSavePersonals2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSavePersonals2MouseExited(evt);
+            }
+        });
+        btnSavePersonals2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel63.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel63.setText("SAVE");
+        btnSavePersonals2.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        customersForm.add(btnSavePersonals2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
+
+        btnBackPersonals2.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackPersonals2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnBackPersonals2.setForeground(new java.awt.Color(0, 0, 0));
+        btnBackPersonals2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBackPersonals2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackPersonals2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBackPersonals2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBackPersonals2MouseExited(evt);
+            }
+        });
+        btnBackPersonals2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel64.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel64.setText("BACK");
+        btnBackPersonals2.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        customersForm.add(btnBackPersonals2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        txtPersonalCI2.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalCI2.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalCI2.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalCI2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalCI2.setText("Write here");
+        txtPersonalCI2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        customersForm.add(txtPersonalCI2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 290, 30));
+
+        jLabel65.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel65.setText("CI");
+        customersForm.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 100, -1));
+
+        txtPersonalFirsName2.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalFirsName2.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalFirsName2.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalFirsName2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalFirsName2.setText("Write here");
+        txtPersonalFirsName2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        customersForm.add(txtPersonalFirsName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, 30));
+
+        jLabel66.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel66.setText("FIRST NAME");
+        customersForm.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 100, -1));
+
+        txtPersonalLastName2.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalLastName2.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalLastName2.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalLastName2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalLastName2.setText("Write here");
+        txtPersonalLastName2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        customersForm.add(txtPersonalLastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 290, 30));
+
+        jLabel67.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel67.setText("LAST NAME");
+        customersForm.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 100, -1));
+
+        txtPersonalPhone2.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalPhone2.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalPhone2.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalPhone2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalPhone2.setText("Write here");
+        txtPersonalPhone2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        customersForm.add(txtPersonalPhone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 290, 30));
+
+        jLabel68.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel68.setText("PHONE");
+        customersForm.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 100, -1));
+
+        txtPersonalAddress2.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalAddress2.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalAddress2.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalAddress2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalAddress2.setText("Write here");
+        txtPersonalAddress2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        customersForm.add(txtPersonalAddress2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 290, 30));
+
+        jLabel69.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel69.setText("ADDRESS");
+        customersForm.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, -1));
+
+        jLabel70.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel70.setText("BIRTHDAY");
+        customersForm.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 100, -1));
+
+        jPanel3.setBackground(new java.awt.Color(255, 102, 0));
+        customersForm.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 720, 10));
+
+        txtPersonalBirthday2.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalBirthday2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        txtPersonalBirthday2.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        customersForm.add(txtPersonalBirthday2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 249, 290, 30));
+
+        jLabel71.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel71.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel71.setText("Without Data! To Do.");
+        jLabel71.setOpaque(true);
+        customersForm.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 750, -1));
+
+        bodyContent.addTab("Products", customersForm);
+
+        servicesIndex.setBackground(new java.awt.Color(255, 255, 255));
+        servicesIndex.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable4.setAutoCreateRowSorter(true);
+        jTable4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        jTable4.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jTable4.setFocusable(false);
+        jTable4.setRowHeight(30);
+        jTable4.setSelectionBackground(lightOrange1);
+        jTable4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable4MouseClicked(evt);
+            }
+        });
+        jScrollPane4.setViewportView(jTable4);
+
+        servicesIndex.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 640, 320));
+
+        btnDeletePersonal3.setBackground(new java.awt.Color(255, 255, 255));
+        btnDeletePersonal3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnDeletePersonal3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeletePersonal3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal3MouseExited(evt);
+            }
+        });
+        btnDeletePersonal3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel72.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel72.setText("DELETE");
+        btnDeletePersonal3.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        servicesIndex.add(btnDeletePersonal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 130, 40));
+
+        btnAddPersonal3.setBackground(new java.awt.Color(255, 102, 51));
+        btnAddPersonal3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddPersonal3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddPersonal3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddPersonal3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddPersonal3MouseExited(evt);
+            }
+        });
+        btnAddPersonal3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel73.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel73.setText("ADD");
+        btnAddPersonal3.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        servicesIndex.add(btnAddPersonal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        btnShowPersonals3.setBackground(new java.awt.Color(255, 255, 255));
+        btnShowPersonals3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnShowPersonals3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnShowPersonals3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnShowPersonals3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnShowPersonals3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnShowPersonals3MouseExited(evt);
+            }
+        });
+        btnShowPersonals3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel74.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel74.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel74.setText("SHOW ALL");
+        btnShowPersonals3.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        servicesIndex.add(btnShowPersonals3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 130, 40));
+
+        btnEditPersonal3.setBackground(new java.awt.Color(255, 255, 255));
+        btnEditPersonal3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnEditPersonal3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditPersonal3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEditPersonal3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnEditPersonal3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnEditPersonal3MouseExited(evt);
+            }
+        });
+        btnEditPersonal3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel75.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel75.setText("EDIT");
+        btnEditPersonal3.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        servicesIndex.add(btnEditPersonal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 130, 40));
+
+        txtPersonalID3.setFont(new java.awt.Font("Corbel", 1, 36)); // NOI18N
+        txtPersonalID3.setForeground(new java.awt.Color(153, 51, 0));
+        txtPersonalID3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        txtPersonalID3.setText("0");
+        txtPersonalID3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 2, new java.awt.Color(204, 51, 0)));
+        txtPersonalID3.setFocusable(false);
+        servicesIndex.add(txtPersonalID3, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 40, 50, 40));
+
+        jLabel76.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel76.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel76.setText("Without Data! To Do.");
+        jLabel76.setOpaque(true);
+        servicesIndex.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 710, -1));
+
+        bodyContent.addTab("Products", servicesIndex);
+
+        servicesForm.setBackground(new java.awt.Color(255, 255, 255));
+        servicesForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSavePersonals3.setBackground(new java.awt.Color(255, 102, 51));
+        btnSavePersonals3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSavePersonals3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSavePersonals3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSavePersonals3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSavePersonals3MouseExited(evt);
+            }
+        });
+        btnSavePersonals3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel77.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel77.setText("SAVE");
+        btnSavePersonals3.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        servicesForm.add(btnSavePersonals3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
+
+        btnBackPersonals3.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackPersonals3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnBackPersonals3.setForeground(new java.awt.Color(0, 0, 0));
+        btnBackPersonals3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBackPersonals3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackPersonals3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBackPersonals3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBackPersonals3MouseExited(evt);
+            }
+        });
+        btnBackPersonals3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel78.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel78.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel78.setText("BACK");
+        btnBackPersonals3.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        servicesForm.add(btnBackPersonals3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        txtPersonalCI3.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalCI3.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalCI3.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalCI3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalCI3.setText("Write here");
+        txtPersonalCI3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        servicesForm.add(txtPersonalCI3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 290, 30));
+
+        jLabel79.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel79.setText("CI");
+        servicesForm.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 100, -1));
+
+        txtPersonalFirsName3.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalFirsName3.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalFirsName3.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalFirsName3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalFirsName3.setText("Write here");
+        txtPersonalFirsName3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        servicesForm.add(txtPersonalFirsName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, 30));
+
+        jLabel80.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel80.setText("FIRST NAME");
+        servicesForm.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 100, -1));
+
+        txtPersonalLastName3.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalLastName3.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalLastName3.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalLastName3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalLastName3.setText("Write here");
+        txtPersonalLastName3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        servicesForm.add(txtPersonalLastName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 290, 30));
+
+        jLabel81.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel81.setText("LAST NAME");
+        servicesForm.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 100, -1));
+
+        txtPersonalPhone3.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalPhone3.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalPhone3.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalPhone3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalPhone3.setText("Write here");
+        txtPersonalPhone3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        servicesForm.add(txtPersonalPhone3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 290, 30));
+
+        jLabel82.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel82.setText("PHONE");
+        servicesForm.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 100, -1));
+
+        txtPersonalAddress3.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalAddress3.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalAddress3.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalAddress3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalAddress3.setText("Write here");
+        txtPersonalAddress3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        servicesForm.add(txtPersonalAddress3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 290, 30));
+
+        jLabel83.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel83.setText("ADDRESS");
+        servicesForm.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, -1));
+
+        jLabel84.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel84.setText("BIRTHDAY");
+        servicesForm.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 100, -1));
+
+        jPanel4.setBackground(new java.awt.Color(255, 102, 0));
+        servicesForm.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 720, 10));
+
+        txtPersonalBirthday3.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalBirthday3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        txtPersonalBirthday3.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        servicesForm.add(txtPersonalBirthday3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 249, 290, 30));
+
+        jLabel85.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel85.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel85.setText("Without Data! To Do.");
+        jLabel85.setOpaque(true);
+        servicesForm.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 750, -1));
+
+        bodyContent.addTab("Products", servicesForm);
+
+        salesIndex.setBackground(new java.awt.Color(255, 255, 255));
+        salesIndex.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable5.setAutoCreateRowSorter(true);
+        jTable5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        jTable5.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jTable5.setFocusable(false);
+        jTable5.setRowHeight(30);
+        jTable5.setSelectionBackground(lightOrange1);
+        jTable5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable5MouseClicked(evt);
+            }
+        });
+        jScrollPane5.setViewportView(jTable5);
+
+        salesIndex.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 640, 320));
+
+        btnDeletePersonal4.setBackground(new java.awt.Color(255, 255, 255));
+        btnDeletePersonal4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnDeletePersonal4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeletePersonal4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnDeletePersonal4MouseExited(evt);
+            }
+        });
+        btnDeletePersonal4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel86.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel86.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel86.setText("DELETE");
+        btnDeletePersonal4.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        salesIndex.add(btnDeletePersonal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 130, 40));
+
+        btnAddPersonal4.setBackground(new java.awt.Color(255, 102, 51));
+        btnAddPersonal4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddPersonal4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddPersonal4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddPersonal4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddPersonal4MouseExited(evt);
+            }
+        });
+        btnAddPersonal4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel87.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel87.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel87.setText("ADD");
+        btnAddPersonal4.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        salesIndex.add(btnAddPersonal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        btnShowPersonals4.setBackground(new java.awt.Color(255, 255, 255));
+        btnShowPersonals4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnShowPersonals4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnShowPersonals4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnShowPersonals4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnShowPersonals4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnShowPersonals4MouseExited(evt);
+            }
+        });
+        btnShowPersonals4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel88.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel88.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel88.setText("SHOW ALL");
+        btnShowPersonals4.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        salesIndex.add(btnShowPersonals4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 130, 40));
+
+        btnEditPersonal4.setBackground(new java.awt.Color(255, 255, 255));
+        btnEditPersonal4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnEditPersonal4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditPersonal4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEditPersonal4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnEditPersonal4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnEditPersonal4MouseExited(evt);
+            }
+        });
+        btnEditPersonal4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel89.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel89.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel89.setText("EDIT");
+        btnEditPersonal4.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        salesIndex.add(btnEditPersonal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 130, 40));
+
+        txtPersonalID4.setFont(new java.awt.Font("Corbel", 1, 36)); // NOI18N
+        txtPersonalID4.setForeground(new java.awt.Color(153, 51, 0));
+        txtPersonalID4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        txtPersonalID4.setText("0");
+        txtPersonalID4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 2, new java.awt.Color(204, 51, 0)));
+        txtPersonalID4.setFocusable(false);
+        salesIndex.add(txtPersonalID4, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 40, 50, 40));
+
+        jLabel90.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel90.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel90.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel90.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel90.setText("Without Data! To Do.");
+        jLabel90.setOpaque(true);
+        salesIndex.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 710, -1));
+
+        bodyContent.addTab("Products", salesIndex);
+
+        salesForm.setBackground(new java.awt.Color(255, 255, 255));
+        salesForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSavePersonals4.setBackground(new java.awt.Color(255, 102, 51));
+        btnSavePersonals4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSavePersonals4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSavePersonals4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSavePersonals4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSavePersonals4MouseExited(evt);
+            }
+        });
+        btnSavePersonals4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel91.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel91.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel91.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel91.setText("SAVE");
+        btnSavePersonals4.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        salesForm.add(btnSavePersonals4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
+
+        btnBackPersonals4.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackPersonals4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnBackPersonals4.setForeground(new java.awt.Color(0, 0, 0));
+        btnBackPersonals4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBackPersonals4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackPersonals4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBackPersonals4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBackPersonals4MouseExited(evt);
+            }
+        });
+        btnBackPersonals4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel92.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel92.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel92.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel92.setText("BACK");
+        btnBackPersonals4.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        salesForm.add(btnBackPersonals4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        txtPersonalCI4.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalCI4.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalCI4.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalCI4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalCI4.setText("Write here");
+        txtPersonalCI4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        salesForm.add(txtPersonalCI4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 290, 30));
+
+        jLabel93.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel93.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel93.setText("CI");
+        salesForm.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 100, -1));
+
+        txtPersonalFirsName4.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalFirsName4.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalFirsName4.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalFirsName4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalFirsName4.setText("Write here");
+        txtPersonalFirsName4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        salesForm.add(txtPersonalFirsName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, 30));
+
+        jLabel94.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel94.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel94.setText("FIRST NAME");
+        salesForm.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 100, -1));
+
+        txtPersonalLastName4.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalLastName4.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalLastName4.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalLastName4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalLastName4.setText("Write here");
+        txtPersonalLastName4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        salesForm.add(txtPersonalLastName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 290, 30));
+
+        jLabel95.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel95.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel95.setText("LAST NAME");
+        salesForm.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 100, -1));
+
+        txtPersonalPhone4.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalPhone4.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalPhone4.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalPhone4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalPhone4.setText("Write here");
+        txtPersonalPhone4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        salesForm.add(txtPersonalPhone4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 290, 30));
+
+        jLabel96.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel96.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel96.setText("PHONE");
+        salesForm.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 100, -1));
+
+        txtPersonalAddress4.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalAddress4.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalAddress4.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalAddress4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalAddress4.setText("Write here");
+        txtPersonalAddress4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        salesForm.add(txtPersonalAddress4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 290, 30));
+
+        jLabel97.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel97.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel97.setText("ADDRESS");
+        salesForm.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, -1));
+
+        jLabel98.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel98.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel98.setText("BIRTHDAY");
+        salesForm.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 100, -1));
+
+        jPanel5.setBackground(new java.awt.Color(255, 102, 0));
+        salesForm.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 720, 10));
+
+        txtPersonalBirthday4.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalBirthday4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        txtPersonalBirthday4.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        salesForm.add(txtPersonalBirthday4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 249, 290, 30));
+
+        jLabel99.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel99.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel99.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel99.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel99.setText("Without Data! To Do.");
+        jLabel99.setOpaque(true);
+        salesForm.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 750, -1));
+
+        bodyContent.addTab("Products", salesForm);
+
+        settings.setBackground(new java.awt.Color(255, 255, 255));
+        settings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSavePersonals5.setBackground(new java.awt.Color(255, 102, 51));
+        btnSavePersonals5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSavePersonals5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSavePersonals5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSavePersonals5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSavePersonals5MouseExited(evt);
+            }
+        });
+        btnSavePersonals5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel100.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel100.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel100.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel100.setText("SAVE");
+        btnSavePersonals5.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        settings.add(btnSavePersonals5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 40));
+
+        btnBackPersonals5.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackPersonals5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnBackPersonals5.setForeground(new java.awt.Color(0, 0, 0));
+        btnBackPersonals5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBackPersonals5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackPersonals5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBackPersonals5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBackPersonals5MouseExited(evt);
+            }
+        });
+        btnBackPersonals5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel101.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel101.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel101.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel101.setText("BACK");
+        btnBackPersonals5.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 130, -1));
+
+        settings.add(btnBackPersonals5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, 40));
+
+        txtPersonalFirsName5.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalFirsName5.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalFirsName5.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalFirsName5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalFirsName5.setText("Write here");
+        txtPersonalFirsName5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        settings.add(txtPersonalFirsName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 290, 30));
+
+        jLabel103.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel103.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel103.setText("CONFIG 1");
+        settings.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 100, -1));
+
+        txtPersonalLastName5.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalLastName5.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalLastName5.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalLastName5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalLastName5.setText("Write here");
+        txtPersonalLastName5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        settings.add(txtPersonalLastName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 290, 30));
+
+        jLabel104.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel104.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel104.setText("CONFIG 4");
+        settings.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 100, -1));
+
+        jPanel6.setBackground(new java.awt.Color(255, 102, 0));
+        settings.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 720, 10));
+
+        jLabel108.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel108.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel108.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel108.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel108.setText("Without Data! To Do.");
+        jLabel108.setOpaque(true);
+        settings.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 750, -1));
+
+        txtPersonalFirsName6.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalFirsName6.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalFirsName6.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalFirsName6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalFirsName6.setText("Write here");
+        txtPersonalFirsName6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        settings.add(txtPersonalFirsName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 290, 30));
+
+        jLabel109.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel109.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel109.setText("CONFIG 2");
+        settings.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 100, -1));
+
+        txtPersonalLastName6.setBackground(new java.awt.Color(255, 255, 255));
+        txtPersonalLastName6.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        txtPersonalLastName6.setForeground(new java.awt.Color(102, 102, 102));
+        txtPersonalLastName6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPersonalLastName6.setText("Write here");
+        txtPersonalLastName6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        settings.add(txtPersonalLastName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 290, 30));
+
+        jLabel110.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabel110.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel110.setText("CONFIG 3");
+        settings.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 100, -1));
+
+        bodyContent.addTab("Products", settings);
+
+        background.add(bodyContent, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 760, 530));
 
         sidebarLogin.setBackground(new java.awt.Color(255, 255, 255));
         sidebarLogin.setForeground(new java.awt.Color(255, 255, 255));
@@ -708,7 +2096,7 @@ public class GUI extends javax.swing.JFrame {
 
         txtpassword.setBackground(new java.awt.Color(255, 255, 255));
         txtpassword.setForeground(new java.awt.Color(102, 102, 102));
-        txtpassword.setText("jPasswordField1");
+        txtpassword.setText("alfreding0pass");
         txtpassword.setBorder(null);
         txtpassword.setOpaque(false);
         txtpassword.addActionListener(new java.awt.event.ActionListener() {
@@ -1030,7 +2418,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeletePersonalMouseExited
 
     private void btnUsersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersMouseClicked
-        bodyContent.setSelectedComponent(personalsIndex);
+        bodyContent.setSelectedComponent(usersIndex);
     }//GEN-LAST:event_btnUsersMouseClicked
 
     private void btnInternetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInternetMouseClicked
@@ -1065,7 +2453,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPersonalsSidebarMouseExited
 
     private void btnCustomersSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersSidebarMouseClicked
-        
+        bodyContent.setSelectedComponent(customersIndex);
     }//GEN-LAST:event_btnCustomersSidebarMouseClicked
 
     private void btnCustomersSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersSidebarMouseEntered
@@ -1077,7 +2465,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCustomersSidebarMouseExited
 
     private void btnServicesSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesSidebarMouseClicked
-        // TODO add your handling code here:
+        bodyContent.setSelectedComponent(customersIndex);
     }//GEN-LAST:event_btnServicesSidebarMouseClicked
 
     private void btnServicesSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesSidebarMouseEntered
@@ -1089,7 +2477,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnServicesSidebarMouseExited
 
     private void btnUsersSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersSidebarMouseClicked
-        // TODO add your handling code here:
+        bodyContent.setSelectedComponent(usersIndex);
     }//GEN-LAST:event_btnUsersSidebarMouseClicked
 
     private void btnUsersSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsersSidebarMouseEntered
@@ -1101,7 +2489,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUsersSidebarMouseExited
 
     private void btnSalesSidebarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesSidebarMouseClicked
-        // TODO add your handling code here:
+        bodyContent.setSelectedComponent(servicesIndex);
     }//GEN-LAST:event_btnSalesSidebarMouseClicked
 
     private void btnSalesSidebarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesSidebarMouseEntered
@@ -1214,6 +2602,354 @@ public class GUI extends javax.swing.JFrame {
         btnMInimize.setBackground(new Color(255,237,237));
     }//GEN-LAST:event_btnMInimizeMouseExited
 
+    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
+        this.finder();
+    }//GEN-LAST:event_txtBuscarActionPerformed
+
+    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable2MouseClicked
+
+    private void btnDeletePersonal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal1MouseClicked
+
+    private void btnDeletePersonal1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal1MouseEntered
+
+    private void btnDeletePersonal1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal1MouseExited
+
+    private void btnAddPersonal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal1MouseClicked
+        bodyContent.setSelectedComponent(usersForm);
+    }//GEN-LAST:event_btnAddPersonal1MouseClicked
+
+    private void btnAddPersonal1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal1MouseEntered
+
+    private void btnAddPersonal1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal1MouseExited
+
+    private void btnShowPersonals1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals1MouseClicked
+
+    private void btnShowPersonals1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals1MouseEntered
+
+    private void btnShowPersonals1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals1MouseExited
+
+    private void btnEditPersonal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal1MouseClicked
+
+    private void btnEditPersonal1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal1MouseEntered
+
+    private void btnEditPersonal1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal1MouseExited
+
+    private void btnSavePersonals1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals1MouseClicked
+
+    private void btnSavePersonals1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals1MouseEntered
+
+    private void btnSavePersonals1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals1MouseExited
+
+    private void btnBackPersonals1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals1MouseClicked
+
+    private void btnBackPersonals1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals1MouseEntered
+
+    private void btnBackPersonals1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals1MouseExited
+
+    private void jTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable3MouseClicked
+
+    private void btnDeletePersonal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal2MouseClicked
+
+    private void btnDeletePersonal2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal2MouseEntered
+
+    private void btnDeletePersonal2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal2MouseExited
+
+    private void btnAddPersonal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal2MouseClicked
+
+    private void btnAddPersonal2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal2MouseEntered
+
+    private void btnAddPersonal2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal2MouseExited
+
+    private void btnShowPersonals2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals2MouseClicked
+
+    private void btnShowPersonals2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals2MouseEntered
+
+    private void btnShowPersonals2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals2MouseExited
+
+    private void btnEditPersonal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal2MouseClicked
+
+    private void btnEditPersonal2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal2MouseEntered
+
+    private void btnEditPersonal2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal2MouseExited
+
+    private void btnSavePersonals2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals2MouseClicked
+
+    private void btnSavePersonals2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals2MouseEntered
+
+    private void btnSavePersonals2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals2MouseExited
+
+    private void btnBackPersonals2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals2MouseClicked
+
+    private void btnBackPersonals2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals2MouseEntered
+
+    private void btnBackPersonals2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals2MouseExited
+
+    private void btnCustomersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomersMouseClicked
+        bodyContent.setSelectedComponent(usersIndex);
+    }//GEN-LAST:event_btnCustomersMouseClicked
+
+    private void jTable4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable4MouseClicked
+
+    private void btnDeletePersonal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal3MouseClicked
+
+    private void btnDeletePersonal3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal3MouseEntered
+
+    private void btnDeletePersonal3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal3MouseExited
+
+    private void btnAddPersonal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal3MouseClicked
+        bodyContent.setSelectedComponent(servicesForm);
+    }//GEN-LAST:event_btnAddPersonal3MouseClicked
+
+    private void btnAddPersonal3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal3MouseEntered
+
+    private void btnAddPersonal3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal3MouseExited
+
+    private void btnShowPersonals3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals3MouseClicked
+
+    private void btnShowPersonals3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals3MouseEntered
+
+    private void btnShowPersonals3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals3MouseExited
+
+    private void btnEditPersonal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal3MouseClicked
+
+    private void btnEditPersonal3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal3MouseEntered
+
+    private void btnEditPersonal3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal3MouseExited
+
+    private void btnSavePersonals3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals3MouseClicked
+
+    private void btnSavePersonals3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals3MouseEntered
+
+    private void btnSavePersonals3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals3MouseExited
+
+    private void btnBackPersonals3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals3MouseClicked
+
+    private void btnBackPersonals3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals3MouseEntered
+
+    private void btnBackPersonals3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals3MouseExited
+
+    private void btnServicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseClicked
+        bodyContent.setSelectedComponent(servicesIndex);
+    }//GEN-LAST:event_btnServicesMouseClicked
+
+    private void jTable5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable5MouseClicked
+
+    private void btnDeletePersonal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal4MouseClicked
+
+    private void btnDeletePersonal4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal4MouseEntered
+
+    private void btnDeletePersonal4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeletePersonal4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeletePersonal4MouseExited
+
+    private void btnAddPersonal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal4MouseClicked
+        bodyContent.setSelectedComponent(salesForm);
+    }//GEN-LAST:event_btnAddPersonal4MouseClicked
+
+    private void btnAddPersonal4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal4MouseEntered
+
+    private void btnAddPersonal4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddPersonal4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddPersonal4MouseExited
+
+    private void btnShowPersonals4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals4MouseClicked
+
+    private void btnShowPersonals4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals4MouseEntered
+
+    private void btnShowPersonals4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowPersonals4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowPersonals4MouseExited
+
+    private void btnEditPersonal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal4MouseClicked
+
+    private void btnEditPersonal4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal4MouseEntered
+
+    private void btnEditPersonal4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditPersonal4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditPersonal4MouseExited
+
+    private void btnSavePersonals4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals4MouseClicked
+
+    private void btnSavePersonals4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals4MouseEntered
+
+    private void btnSavePersonals4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals4MouseExited
+
+    private void btnBackPersonals4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals4MouseClicked
+
+    private void btnBackPersonals4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals4MouseEntered
+
+    private void btnBackPersonals4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals4MouseExited
+
+    private void btnSalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalesMouseClicked
+        bodyContent.setSelectedComponent(salesIndex);
+    }//GEN-LAST:event_btnSalesMouseClicked
+
+    private void btnSavePersonals5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals5MouseClicked
+
+    private void btnSavePersonals5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals5MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals5MouseEntered
+
+    private void btnSavePersonals5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSavePersonals5MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSavePersonals5MouseExited
+
+    private void btnBackPersonals5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals5MouseClicked
+
+    private void btnBackPersonals5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals5MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals5MouseEntered
+
+    private void btnBackPersonals5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackPersonals5MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackPersonals5MouseExited
+
+    private void btnSettingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSettingMouseClicked
+        bodyContent.setSelectedComponent(settings);
+    }//GEN-LAST:event_btnSettingMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1230,11 +2966,28 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel background;
     private javax.swing.JTabbedPane bodyContent;
     private javax.swing.JPanel btnAddPersonal;
+    private javax.swing.JPanel btnAddPersonal1;
+    private javax.swing.JPanel btnAddPersonal2;
+    private javax.swing.JPanel btnAddPersonal3;
+    private javax.swing.JPanel btnAddPersonal4;
     private javax.swing.JPanel btnBackPersonals;
+    private javax.swing.JPanel btnBackPersonals1;
+    private javax.swing.JPanel btnBackPersonals2;
+    private javax.swing.JPanel btnBackPersonals3;
+    private javax.swing.JPanel btnBackPersonals4;
+    private javax.swing.JPanel btnBackPersonals5;
     private javax.swing.JPanel btnCustomers;
     private javax.swing.JPanel btnCustomersSidebar;
     private javax.swing.JPanel btnDeletePersonal;
+    private javax.swing.JPanel btnDeletePersonal1;
+    private javax.swing.JPanel btnDeletePersonal2;
+    private javax.swing.JPanel btnDeletePersonal3;
+    private javax.swing.JPanel btnDeletePersonal4;
     private javax.swing.JPanel btnEditPersonal;
+    private javax.swing.JPanel btnEditPersonal1;
+    private javax.swing.JPanel btnEditPersonal2;
+    private javax.swing.JPanel btnEditPersonal3;
+    private javax.swing.JPanel btnEditPersonal4;
     private javax.swing.JPanel btnHome;
     private javax.swing.JLabel btnInternet;
     private javax.swing.JPanel btnLogIn;
@@ -1246,18 +2999,36 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel btnSalesSidebar;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JPanel btnSavePersonals;
+    private javax.swing.JPanel btnSavePersonals1;
+    private javax.swing.JPanel btnSavePersonals2;
+    private javax.swing.JPanel btnSavePersonals3;
+    private javax.swing.JPanel btnSavePersonals4;
+    private javax.swing.JPanel btnSavePersonals5;
     private javax.swing.JPanel btnServices;
     private javax.swing.JPanel btnServicesSidebar;
     private javax.swing.JPanel btnSetting;
     private javax.swing.JPanel btnShowPersonals;
+    private javax.swing.JPanel btnShowPersonals1;
+    private javax.swing.JPanel btnShowPersonals2;
+    private javax.swing.JPanel btnShowPersonals3;
+    private javax.swing.JPanel btnShowPersonals4;
     private javax.swing.JPanel btnUsers;
     private javax.swing.JPanel btnUsersSidebar;
+    private javax.swing.JPanel customersForm;
+    private javax.swing.JPanel customersIndex;
     private javax.swing.JPanel headerContent;
     private javax.swing.JPanel home;
     private javax.swing.JPanel homeLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -1288,37 +3059,145 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JPanel personalsForm;
     private javax.swing.JPanel personalsIndex;
+    private javax.swing.JPanel salesForm;
+    private javax.swing.JPanel salesIndex;
+    private javax.swing.JPanel servicesForm;
+    private javax.swing.JPanel servicesIndex;
+    private javax.swing.JPanel settings;
     private javax.swing.JTabbedPane sidebarContent;
     private javax.swing.JPanel sidebarLogin;
     private javax.swing.JPanel sidebarOptions;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtPersonalAddress;
+    private javax.swing.JTextField txtPersonalAddress1;
+    private javax.swing.JTextField txtPersonalAddress2;
+    private javax.swing.JTextField txtPersonalAddress3;
+    private javax.swing.JTextField txtPersonalAddress4;
     private com.toedter.calendar.JDateChooser txtPersonalBirthday;
+    private com.toedter.calendar.JDateChooser txtPersonalBirthday1;
+    private com.toedter.calendar.JDateChooser txtPersonalBirthday2;
+    private com.toedter.calendar.JDateChooser txtPersonalBirthday3;
+    private com.toedter.calendar.JDateChooser txtPersonalBirthday4;
     private javax.swing.JTextField txtPersonalCI;
+    private javax.swing.JTextField txtPersonalCI1;
+    private javax.swing.JTextField txtPersonalCI2;
+    private javax.swing.JTextField txtPersonalCI3;
+    private javax.swing.JTextField txtPersonalCI4;
     private javax.swing.JTextField txtPersonalFirsName;
+    private javax.swing.JTextField txtPersonalFirsName1;
+    private javax.swing.JTextField txtPersonalFirsName2;
+    private javax.swing.JTextField txtPersonalFirsName3;
+    private javax.swing.JTextField txtPersonalFirsName4;
+    private javax.swing.JTextField txtPersonalFirsName5;
+    private javax.swing.JTextField txtPersonalFirsName6;
     private javax.swing.JLabel txtPersonalID;
+    private javax.swing.JLabel txtPersonalID1;
+    private javax.swing.JLabel txtPersonalID2;
+    private javax.swing.JLabel txtPersonalID3;
+    private javax.swing.JLabel txtPersonalID4;
     private javax.swing.JTextField txtPersonalLastName;
+    private javax.swing.JTextField txtPersonalLastName1;
+    private javax.swing.JTextField txtPersonalLastName2;
+    private javax.swing.JTextField txtPersonalLastName3;
+    private javax.swing.JTextField txtPersonalLastName4;
+    private javax.swing.JTextField txtPersonalLastName5;
+    private javax.swing.JTextField txtPersonalLastName6;
     private javax.swing.JTextField txtPersonalPhone;
+    private javax.swing.JTextField txtPersonalPhone1;
+    private javax.swing.JTextField txtPersonalPhone2;
+    private javax.swing.JTextField txtPersonalPhone3;
+    private javax.swing.JTextField txtPersonalPhone4;
     private javax.swing.JTextField txtUsername;
     private javax.swing.JPasswordField txtpassword;
+    private javax.swing.JPanel usersForm;
+    private javax.swing.JPanel usersIndex;
     // End of variables declaration//GEN-END:variables
 
     private void goToWebSiteEcosiaSearch() {
@@ -1465,6 +3344,15 @@ public class GUI extends javax.swing.JFrame {
             daoPersonals.delete(personal);
         }
         this.listPersonals();
+    }
+
+    private void finder() {
+        if (bodyContent.getSelectedComponent().equals(home))
+            JOptionPane.showMessageDialog(null, "Home");
+        else if (bodyContent.getSelectedComponent().equals(personalsIndex))
+            JOptionPane.showMessageDialog(null, "Personal index");
+        else if (bodyContent.getSelectedComponent().equals(personalsForm))
+            JOptionPane.showMessageDialog(null, "Personal form");
     }
 
 }
