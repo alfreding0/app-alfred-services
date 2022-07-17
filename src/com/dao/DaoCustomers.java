@@ -111,10 +111,6 @@ public class DaoCustomers{
     public List<Customers> findPersonalForFirstName(String value) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         
-        /**
-         * LIKE en hql funciona como like y un ilike de sql, 
-         * por tanto la consulta será correcta con mayúsculas y minúsculas.
-        */
         String hql = "FROM Customers where first_name LIKE :first_name";
         Query query = session.createQuery(hql);
         query.setParameter("first_name", "%"+value+"%");

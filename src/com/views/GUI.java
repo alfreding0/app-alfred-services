@@ -21,6 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.DefaultTableModel;
@@ -371,11 +372,11 @@ public class GUI extends javax.swing.JFrame {
         txtBuscar.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         txtBuscar.setForeground(new java.awt.Color(102, 102, 102));
         txtBuscar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtBuscar.setText("Buscar una opción");
+        txtBuscar.setText("Find in...");
         txtBuscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
-        txtBuscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBuscarActionPerformed(evt);
+        txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtBuscarKeyReleased(evt);
             }
         });
         headerContent.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 290, 30));
@@ -2602,10 +2603,6 @@ public class GUI extends javax.swing.JFrame {
         btnMInimize.setBackground(new Color(255,237,237));
     }//GEN-LAST:event_btnMInimizeMouseExited
 
-    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
-        this.finder();
-    }//GEN-LAST:event_txtBuscarActionPerformed
-
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jTable2MouseClicked
@@ -2950,6 +2947,10 @@ public class GUI extends javax.swing.JFrame {
         bodyContent.setSelectedComponent(settings);
     }//GEN-LAST:event_btnSettingMouseClicked
 
+    private void txtBuscarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyReleased
+        this.finder();
+    }//GEN-LAST:event_txtBuscarKeyReleased
+
     /**
      * @param args the command line arguments
      */
@@ -3238,9 +3239,7 @@ public class GUI extends javax.swing.JFrame {
         }
     }
 
-    private void listPersonals() {
-        List<Personals> personals = daoPersonals.getListPersonals();
-
+    private void setDataInTable(List<Personals> personals){
         DefaultTableModel modelTable = new DefaultTableModel(
                 null,
                 new Object[]{"ID", "CI", "FIRSTNAME", "LASTNAME", "PHONE", "ADDRESS", "BIRTHDAY"}
@@ -3251,6 +3250,11 @@ public class GUI extends javax.swing.JFrame {
         });
 
         jTable1.setModel(modelTable);
+    }
+    
+    private void listPersonals() {
+        List<Personals> personals = daoPersonals.getListPersonals();
+        this.setDataInTable(personals);
     }
 
     private void savePersonal() {
@@ -3347,12 +3351,25 @@ public class GUI extends javax.swing.JFrame {
     }
 
     private void finder() {
-        if (bodyContent.getSelectedComponent().equals(home))
-            JOptionPane.showMessageDialog(null, "Home");
-        else if (bodyContent.getSelectedComponent().equals(personalsIndex))
-            JOptionPane.showMessageDialog(null, "Personal index");
-        else if (bodyContent.getSelectedComponent().equals(personalsForm))
-            JOptionPane.showMessageDialog(null, "Personal form");
+        if (bodyContent.getSelectedComponent().equals(home)){
+            System.out.println("To do a regex for find option botton of menu home");
+//            if (whatButtonIsIt(txtBuscar.getText(), "(conf|configu|configuration|configuracion)"))
+//                btnSetting.requestFocus();
+        } else if (bodyContent.getSelectedComponent().equals(personalsIndex)){
+            List<Personals> personals = daoPersonals.findPersonalForFirstName(txtBuscar.getText());
+            this.setDataInTable(personals);
+        } else if (bodyContent.getSelectedComponent().equals(usersIndex)) {
+            //
+        } else if (bodyContent.getSelectedComponent().equals(customersIndex)) {
+            //
+        }
     }
 
+    private boolean whatButtonIsIt(String value, String regexPatron){
+//        String patt = ".*?(?<=\\s|^)conf(?=\\s|$).*";
+//        String patt = "(?¡)(\\W|^)(conf|configu|configuration|configuracion)(\\W|$)";
+        String patt = regexPatron;
+        Pattern regex = Pattern.compile(patt);
+        return regex.matcher(value).matches();
+    }
 }
